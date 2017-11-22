@@ -1,0 +1,147 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .width-wrap.use
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") Аренда и продажа активов
+                li
+                    a(href="") Продажа активов
+                li
+                    span Гастелло
+
+            h1 Гастелло
+                small  Продажа активов
+
+            .justifyed.mb-70.object--text
+                .one-half
+                    img(src="../../../img/logo--gastello.jpg" alt /).logo
+
+                .one-half
+                    p Все предлагаемые объекты находятся в&nbsp;собственности застройщика, дополнительных обременений нет.
+                    p Продажа объекта осуществляется напрямую от&nbsp;застройщика, что позволяет обеспечить &laquo;прозрачность&raquo; сделки купли-продажи.
+                    p В&nbsp;случае заинтересованности объекты недвижимости можно приобрести в&nbsp;кредит по&nbsp;специальным условиям.
+
+            .object--sell
+                form(action="" method="post").object--sell-form
+                    span
+                        strong Название объекта
+
+                    select.js--select-styled.js--tab-object
+                        option(value="Офисно-торговая площадь") Офисно-торговая площадь
+                        option(value="Магазины") Магазины
+
+                    a(href="").btn.btn-red.js--show-squares Показать
+
+                .load-container
+                    table
+                        tr
+                            th.object--sell-cost Стоимость
+                            th.object--sell-characters Характеристики
+                            th.object--sell-docs Документы
+                            th.object--sell-info Подробнее об объекте
+
+                        tr
+                            td.object--sell-cost
+                                span 2 000 010 руб.
+                                a(href="../pagePopup/pagePopup-form.html" class="fancybox.ajax").fancy.btn.btn-red Заявка
+
+                            td.object--sell-characters
+                                span Адрес: Самара, ул. Мира, 23
+                                span Кол-во комнат: 3
+                                span Этаж / этажность: 2/19
+                                span Стены: кирпич
+                                span Площадь, кв.м: 230
+
+                            td.object--sell-docs
+                                a(href="")
+                                    img(src="../../../img/icon--docs.svg" alt /)
+                                    span Скачать
+
+                            td.object--sell-info
+                                p Расположен в&nbsp;г. Самара, в&nbsp;престижном и&nbsp;экологически благоприятном районе. Дом бизнес-класса, на&nbsp;благоустроенной территории комплекса размещена детская игровая площадка, а&nbsp;также зоны для отдыха, автостоянка. Удобная транспортная доступность.
+
+                                ul.object--sell-info-img
+                                    li
+                                        a(href="../../../img/bg--avenue-2.jpg" rel="tr1").fancy
+                                            img(src="../../../img/bg--avenue-2.jpg" alt /)
+                                    li
+                                        a(href="../../../img/bg--avenue-2.jpg" rel="tr1").fancy
+                                            img(src="../../../img/bg--avenue-2.jpg" alt /)
+                                    li
+                                        a(href="../../../img/bg--avenue-2.jpg" rel="tr1").fancy
+                                            img(src="../../../img/bg--avenue-2.jpg" alt /)
+                                    li
+                                        a(href="../../../img/bg--avenue-2.jpg" rel="tr1").fancy
+                                            img(src="../../../img/bg--avenue-2.jpg" alt /)
+                                    li
+                                        a(href="../../../img/bg--avenue-2.jpg" rel="tr1").fancy
+                                            img(src="../../../img/bg--avenue-2.jpg" alt /)
+                                    li
+                                        a(href="../../../img/bg--avenue-2.jpg" rel="tr1").fancy
+                                            img(src="../../../img/bg--avenue-2.jpg" alt /)
+
+            .object--contacts
+                h4 Обращайтесь к нам по телефону
+                    a(href="tel:8-800-700-55-22").phone
+                        =" "
+                        strong 8-800-700-55-22
+                    br
+                    ="Наша электронная почта:"
+                    =" "
+                    a(href="mailto:mail@dkdrevo.ru").mail mail@dkdrevo.ru
+
+        .object-slider.fullpage--inner-slider
+            div(style="background: url('../../../img/img--slider-gastello-1.jpg') no-repeat 50% 50%" alt /)
+            div(style="background: url('../../../img/img--slider-avenue-2.jpg') no-repeat 50% 50%" alt /)
+
+        ul.justifyed.object--info
+            li.one-third.bg-red
+                span 3 938 кв.м.
+                    i площадь
+                    i под офисы
+
+            li.one-third.bg-green
+                span 36 542,4 кв.м.
+                    i общая площадь
+                    i строительства
+
+            li.one-third.bg-blue
+                span 220 машиномест
+                    i в крытом
+                    i паркинге
+
+        .justifyed
+            a(href="" style="background: url('../../../img/bg--gastello-2.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Продажа
+                            i  активов
+
+                        small Гастелло
+
+
+            a(href="" style="background: url('../../../img/bg--gastello-3.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Аренда
+                            i коммерческой
+                            i недвижимости
+                        small Гастелло
+
+    footer.section.footer
+        include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/avenue-sell.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

@@ -1,0 +1,19 @@
+.popup-form
+    form(action="../../../js/ajax/send-ok.php" method="post").main-form
+
+        h5 Оставьте заявку, и мы свяжемся с Вами.
+
+        label
+            span Объект
+            input(type="text" name="" value="Данные о квартире (при необходимости)").inp
+        label
+            span ФИО
+            input(type="text" name="").inp.required
+        label
+            span E-mail
+            input(type="text" name="").inp.required.inp-mail
+        label
+            span Телефон
+            input(type="text" name="").inp.required.inp-phone
+
+        a(href="").btn.btn-red Отправить

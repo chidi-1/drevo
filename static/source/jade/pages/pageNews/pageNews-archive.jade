@@ -1,0 +1,112 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    span Архив новостей
+
+            h1 Архив новостей
+
+        ul.news-list.load-container
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-1.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Снова победа!
+                    p Праздник, организованный в&nbsp;честь 3-летия микрорайона &laquo;Южный город&raquo; стал событием года.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-2.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Древо — лучшие!
+                    p Команда ООО &laquo;ДК&nbsp;Древо&raquo; одержала убедительную победу в&nbsp;&laquo;МозгоБойне&raquo; от&nbsp;Woman&rsquo;s Day и&nbsp;Телесемь-Самара.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-3.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Ипотека 8,4%
+                    p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-1.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Снова победа!
+                    p Праздник, организованный в&nbsp;честь 3-летия микрорайона &laquo;Южный город&raquo; стал событием года.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-2.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Древо — лучшие!
+                    p Команда ООО &laquo;ДК&nbsp;Древо&raquo; одержала убедительную победу в&nbsp;&laquo;МозгоБойне&raquo; от&nbsp;Woman&rsquo;s Day и&nbsp;Телесемь-Самара.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-3.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Ипотека 8,4%
+                    p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-1.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Снова победа!
+                    p Праздник, организованный в&nbsp;честь 3-летия микрорайона &laquo;Южный город&raquo; стал событием года.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-2.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Древо — лучшие!
+                    p Команда ООО &laquo;ДК&nbsp;Древо&raquo; одержала убедительную победу в&nbsp;&laquo;МозгоБойне&raquo; от&nbsp;Woman&rsquo;s Day и&nbsp;Телесемь-Самара.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-3.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Ипотека 8,4%
+                    p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;
+
+        .btn-wrap
+            a(href="" data-method="post" data-action="../../../js/ajax/load-news.php").btn.btn-s.js--load-more Показать еще
+
+    footer(data-anchor="").footer
+        include ../../partials/footer
+
+    <!-- Этот скрипт на сервере всегда удалять -->
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/news--archive-mobile.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

@@ -1,0 +1,98 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .fullpage
+        .section.index--promo.bg-cover(style="background: url('../../../img/bg--index-top.jpg') no-repeat 50% 50%")
+            .section-center-content
+                .index--promo--content
+                    img(src="../../../img/logo--index-promo.svg" alt /)
+                    h1 Устойчивое
+                        = " "
+                        i развитие
+                        = " "
+                        i территорий
+
+            ul.fullpage--bottom-list.section-bottom-content
+                li.one-third.bg-brown-tr Сейчас ведется строительство 700 тысяч кв.м.
+                li.one-third.bg-green-tr До&nbsp;конца 2017 сдаем 300 тысяч кв.м.
+                li.one-third.bg-blue-tr Компанией построено 7&nbsp;млн.&nbsp;200 тысяч кв.м.
+
+        .section.index--objects
+            ul.section-strech-content
+                li(style="background: url('../../../img/img--index-2-1.jpg') no-repeat 50% 50%").one-third.bg-cover
+                    a(href="")
+                        span.bg-white-tr.section-top-content Комплексное развитие территорий
+                li(style="background: url('../../../img/img--index-2-2.jpg') no-repeat 50% 50%").one-third.bg-cover
+                    a(href="")
+                        span.bg-white-tr.section-top-content Текущие объекты
+                li(style="background: url('../../../img/img--index-2-3.jpg') no-repeat 50% 50%").one-third.bg-cover
+                    a(href="")
+                        span.bg-white-tr.section-top-content Завершенные объекты
+
+        .section.index--activity
+            .justifyed.section-strech-content
+                .index--activity--left.one-third
+                    .index--activity--left--el.bg-cover(style="background: url('../../../img/img--index-3-s-1.jpg') no-repeat 50% 50%")
+                        a(href="")
+                            span.bg-white-tr.section-bottom-content Эксплуатация объектов
+                    .index--activity--left--el.bg-cover(style="background: url('../../../img/img--index-3-s-2.jpg') no-repeat 50% 50%")
+                        a(href="")
+                            span.bg-beige-tr.section-bottom-content Аренда и&nbsp;продажа активов
+                a(style="background: url('../../../img/img--index-3-l.jpg') no-repeat 50% 50%" href="http://www.youtube.com/embed/lmY5iP3VkHs?autoplay=1" class="fancybox.iframe").index--activity--right.two-third.fancy.bg-cover
+                    span
+                        strong Производство ДСК
+                        ="Домостроительный Комбинат «Древо»"
+
+        .section.index--contacts
+            .justifyed.section-strech-content
+                a(href="" style="background: url('../../../img/img--index-4-l.jpg') no-repeat 50% 50%").index--contacts--left.two-third.bg-cover
+                    .bg-gray-tr.section-bottom-content
+                        span
+                            strong Инвесторам
+
+                a(href="" style="background: url('../../../img/img--index-4-s.jpg') no-repeat 50% 50%").index--contacts--right.one-third.bg-cover
+                    .bg-white-tr.section-bottom-content
+                        span
+                            strong ГОС
+                            ="поддержка"
+
+        .section.index--news
+            ul.news-list
+                li.news-list--el.one-third
+                    a(href="" style="background: url('../../../img/img--index-5-1.jpg') no-repeat 50% 70%").news-list--el-img.bg-cover
+
+                    .news-list--el-content
+                        a(href="").news-list--el-time
+                            time 20.04.2017
+                        a(href="").news-list--el-title Снова победа!
+                        p Праздник, организованный в&nbsp;честь 3-летия микрорайона &laquo;Южный город&raquo; стал событием года.
+
+                li.news-list--el.one-third
+                    a(href="" style="background: url('../../../img/img--index-5-2.jpg') no-repeat 50% 70%").news-list--el-img.bg-cover
+
+                    .news-list--el-content
+                        a(href="").news-list--el-time
+                            time 20.04.2017
+                        a(href="").news-list--el-title Древо — лучшие!
+                        p Команда ООО &laquo;ДК&nbsp;Древо&raquo; одержала убедительную победу в&nbsp;&laquo;МозгоБойне&raquo; от&nbsp;Woman&rsquo;s Day и&nbsp;Телесемь-Самара.
+
+                li.news-list--el.one-third
+                    a(href="" style="background: url('../../../img/img--index-5-3.jpg') no-repeat 50% 70%").news-list--el-img.bg-cover
+
+                    .news-list--el-content
+                        a(href="").news-list--el-time
+                            time 20.04.2017
+                        a(href="").news-list--el-title Ипотека 8,4%
+                        p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;
+
+        footer.section.footer.footer-slider
+            .section-center-content
+                include ../../partials/footer
+
+
+
+
+

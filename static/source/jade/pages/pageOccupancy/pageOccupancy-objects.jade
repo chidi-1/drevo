@@ -1,0 +1,110 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") Аренда и&nbsp;продажа активов
+                li
+                    span Аренда коммерческой недвижимости
+
+            h1 Аренда коммерческой недвижимости
+
+        ul.occupacy-list
+            li(style="background: url('../../../img/img--occupacy-1.jpg') no-repeat 100% 0%").occupacy-list--el
+                .width-wrap
+                    .occupacy-list--el-content
+                        span.title Южный город
+                        span Коммерческие площади
+                            br
+                            ="от 50 до 2 000 кв.м."
+
+                        span
+                            strong от 700 руб. за кв.м.
+
+                        a(href="").btn Подробнее
+
+                    .occupacy-list--el-logo
+                        img(src="../../../img/logo--south.svg" alt /)
+
+            li(style="background: url('../../../img/img--occupacy-2.jpg') no-repeat 100% 0%").occupacy-list--el
+                .width-wrap
+                    .occupacy-list--el-content
+                        span.title Желябово.рф
+                        span Коммерческие площади
+                            br
+                            ="от 50 до 2 000 кв.м."
+
+                        span
+                            strong от 700 руб. за кв.м.
+
+                        a(href="").btn Подробнее
+
+                    .occupacy-list--el-logo
+                        img(src="../../../img/logo--zhel.jpg" alt /)
+
+            li(style="background: url('../../../img/img--occupacy-3.jpg') no-repeat 100% 0%").occupacy-list--el
+                .width-wrap
+                    .occupacy-list--el-content
+                        span.title 3 Авеню
+                        span Коммерческие площади
+                            br
+                            ="от 50 до 2 000 кв.м."
+
+                        span
+                            strong от 700 руб. за кв.м.
+
+                        a(href="").btn Подробнее
+
+                    .occupacy-list--el-logo
+                        img(src="../../../img/logo--avenue.jpg" alt /)
+
+            li(style="background: url('../../../img/img--occupacy-4.jpg') no-repeat 100% 0%").occupacy-list--el
+                .width-wrap
+                    .occupacy-list--el-content
+                        span.title Печера.рф
+                        span Коммерческие площади
+                            br
+                            ="от 50 до 2 000 кв.м."
+
+                        span
+                            strong от 700 руб. за кв.м.
+
+                        a(href="").btn Подробнее
+
+                    .occupacy-list--el-logo
+                        img(src="../../../img/logo--pechera.jpg" alt /)
+
+            li(style="background: url('../../../img/img--occupacy-5.jpg') no-repeat 100% 0%").occupacy-list--el
+                .width-wrap
+                    .occupacy-list--el-content
+                        span.title Гастелло.рф
+                        span Коммерческие площади
+                            br
+                            ="от 50 до 2 000 кв.м."
+
+                        span
+                            strong от 700 руб. за кв.м.
+
+                        a(href="").btn Подробнее
+
+                    .occupacy-list--el-logo
+                        img(src="../../../img/logo--gastello.jpg" alt /)
+
+    footer(data-anchor="").footer
+        include ../../partials/footer
+
+    <!-- Этот скрипт на сервере всегда удалять -->
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/occupacy-objects-mobile.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

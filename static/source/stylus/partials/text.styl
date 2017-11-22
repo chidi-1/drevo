@@ -1,0 +1,186 @@
+a, p, span, li, input, time, blockquote, textarea, div
+  font-family $f_Exo2_l
+  font-size 18px
+  line-height 26px
+  text-decoration none
+  color $c_black
+
+  @media md
+    font-size 16px
+    line-height 24px
+
+  @media sm
+    font-size 14px
+    line-height 17px
+
+p
+  margin-bottom 20px
+
+  @media sm
+    margin-bottom 5px
+
+  &:last-child
+    margin-bottom 0
+
+  a
+    text-decoration underline
+    color $c_red
+
+a
+  cursor pointer
+
+strong
+  font-family $f_Exo2_b
+
+h1
+  color $c_black
+  font-size 72px
+  line-height 74px
+  text-transform uppercase
+  font-family $f_Exo2_l
+  margin-bottom 36px
+
+  @media md
+    font-size 36px
+    line-height 40px
+    margin-bottom 29px
+
+  @media sm
+    margin-bottom 20px
+    line-height 43px
+
+  small
+    font-family $f_Exo2_l
+    display block
+    font-size 36px
+    line-height 74px
+
+    @media md
+      font-size 30px
+      line-height 37px
+
+    @media sm
+      font-size 22px
+      line-height 30px
+
+h2
+  font-family $f_Exo2_m
+  font-size 60px
+  line-height normal
+  text-transform uppercase
+
+  @media md
+    font-size 30px
+
+h3
+  display block
+  font-size 48px
+  text-transform uppercase
+  line-height normal
+  font-family $f_Exo2_l
+  margin-bottom 33px
+
+  @media sm
+    font-size 30px
+
+  i
+    display block
+    font-style normal
+
+  strong
+    font-family $f_Exo2_m
+
+  small
+    font inherit
+    font-family $f_Exo2_th
+
+h4
+  color $c_black
+  font-size 36px
+  text-transform uppercase
+  line-height normal
+  font-family $f_Exo2_l
+
+  @media md
+    font-size 30px
+
+  &.white
+    color $c_white
+
+  strong
+    font-family $f_Exo2_m
+
+  &.small
+    text-transform none
+
+h5
+  color $c_black
+  font-size 30px
+  text-transform uppercase
+  line-height normal
+  font-family $f_Exo2_l
+
+  @media md
+    font-size 21px
+
+  @media sm
+    font-size 18px
+
+  &.white
+    color $c_white
+
+  strong
+    font-family $f_Exo2_m
+
+  &.small
+    text-transform none
+
+h6
+  color $c_black
+  font-size 24px
+  line-height normal
+  font-family $f_Exo2_l
+  margin-bottom 30px
+
+  @media md
+    font-size 16px
+
+  @media sm
+    font-size 14px
+
+  strong
+    font-family $f_Exo2_m
+
+ul.text
+  display block
+  padding-left 20px
+  margin-bottom 20px
+
+  &:last-child
+    margin-bottom 0
+
+  @media sm
+    margin-bottom 5px
+
+  li
+    display block
+    position relative
+    font-size 18px
+    line-height 26px
+
+    @media md
+      font-size 16px
+      line-height 24px
+
+    @media sm
+      font-size 14px
+      line-height 17px
+
+    &:before
+      position absolute
+      content "—"
+      left -20px
+      top -1px
+      font inherit
+
+

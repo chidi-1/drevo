@@ -1,0 +1,43 @@
+.btn-wrap
+  display block
+  text-align center
+
+.btn
+  box-sizing  border-box
+  font-size 24px
+  text-align center
+  color $cBlack
+  cursor pointer
+  transition all 0.2s ease-in-out
+  padding 20px 60px
+  outline none
+  display inline-block
+  vertical-align top
+  text-transform uppercase
+  font-family $f_Exo2
+  border 1px solid #adadad
+
+  &-s
+    font-size 18px
+    padding 13px 40px
+
+  &.btn-gray
+    color $c_white
+    background rgba(0,0,0,0.3)
+    border none
+
+  &.btn-red
+    color $c_white
+    background $c_red
+    border none
+    
+  &:hover
+      text-decoration none
+
+  &:active
+      text-decoration none
+
+  &_disabled,
+  &[disabled]
+      background #cfcfcf
+      box-shadow none

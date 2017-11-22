@@ -1,0 +1,73 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") Аренда и&nbsp;продажа активов
+
+            h1 Аренда и&nbsp;продажа активов
+
+            .occupacy-info
+                img(src="../../../img/logo--south.svg" alt /)
+
+                h5 Южный город
+                    strong аренда коммерческой недвижимости
+
+                span площади
+                    i от 50 до 2 000 кв.м.
+                    strong от 700 руб. за кв.м.
+
+                a(href="").btn.btn-gray Подробнее
+
+            .justifyed.occupacy-objects
+                .one-half.bg-red
+                    .title
+                        h2 Продажа активов
+
+                    ul
+                        li
+                            a(href="") Южный город
+                        li
+                            a(href="") Желябово.рф
+                        li
+                            a(href="") 3 Авеню
+                        li
+                            a(href="")  Печера.рф
+                        li
+                            a(href="") Гастелло.рф
+
+                .one-half.bg-gray
+                    .title
+                        h2 Аренда
+                        h5 коммерческой недвижимости
+
+                    ul
+                        li
+                            a(href="") Южный город
+                        li
+                            a(href="") Желябово.рф
+                        li
+                            a(href="") 3 Авеню
+                        li
+                            a(href="")  Печера.рф
+                        li
+                            a(href="") Гастелло.рф
+
+    footer(data-anchor="").footer
+        include ../../partials/footer
+
+    <!-- Этот скрипт на сервере всегда удалять -->
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/occupacy-mobile.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

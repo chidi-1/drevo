@@ -1,0 +1,80 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .fullpage
+        .section.section-text
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="") Древо
+                    li
+                        a(href="") О компании
+                    li
+                        a(href="") Государственная поддержка
+
+                h1  Государственная поддержка
+
+                .justifyed
+                    .one-half
+                        img(src="../../../img/img--support.jpg" alt /)
+
+                    .one-half
+                        ul.support-links
+                            li
+                                a(href="") Доступное и комфортное жилье — гражданам России
+                            li
+                                a(href="") Название второй программы
+                            li
+                                a(href="") Название третьей госпрограммы
+                            li
+                                a(href="") Название четвертой государственной программы
+
+        .section
+            .fullpage--inner-slider
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+
+        .section.index--news
+            ul.news-list
+                li.news-list--el.one-third
+                    a(href="" style="background: url('../../../img/img--index-5-1.jpg') no-repeat 50% 70%").news-list--el-img.bg-cover
+
+                    .news-list--el-content
+                        a(href="").news-list--el-time
+                            time 20.04.2017
+                        a(href="").news-list--el-title Снова победа!
+                        p Праздник, организованный в&nbsp;честь 3-летия микрорайона &laquo;Южный город&raquo; стал событием года.
+
+                li.news-list--el.one-third
+                    a(href="" style="background: url('../../../img/img--index-5-2.jpg') no-repeat 50% 70%").news-list--el-img.bg-cover
+
+                    .news-list--el-content
+                        a(href="").news-list--el-time
+                            time 20.04.2017
+                        a(href="").news-list--el-title Древо — лучшие!
+                        p Команда ООО &laquo;ДК&nbsp;Древо&raquo; одержала убедительную победу в&nbsp;&laquo;МозгоБойне&raquo; от&nbsp;Woman&rsquo;s Day и&nbsp;Телесемь-Самара.
+
+                li.news-list--el.one-third
+                    a(href="" style="background: url('../../../img/img--index-5-3.jpg') no-repeat 50% 70%").news-list--el-img.bg-cover
+
+                    .news-list--el-content
+                        a(href="").news-list--el-time
+                            time 20.04.2017
+                        a(href="").news-list--el-title Ипотека 8,4%
+                        p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;
+
+        footer.section.footer.footer-slider
+            .section-center-content
+                include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/main.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

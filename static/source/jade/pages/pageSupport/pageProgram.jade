@@ -1,0 +1,93 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") О компании
+                li
+                    a(href="") Государственная поддержка
+                li
+                    span Доступное и комфортное жилье — гражданам России
+
+            h1 Доступное и&nbsp;комфортное жилье&nbsp;&mdash; гражданам России
+
+            .program
+                .justifyed
+                    .one-half
+                        img(src="../../../img/img--program.png" alt /)
+
+                    .one-half
+                        p Девелоперская компания &laquo;Древо&raquo; участвует в&nbsp;реализации национального проекта &laquo;Доступное и&nbsp;комфортное жилье&nbsp;&mdash; гражданам России&raquo;, является членом Гильдии строителей.
+                        p Национальный проект &laquo;Жильё&raquo; (проект &laquo;Доступное и&nbsp;комфортное жильё&nbsp;&mdash; гражданам России&raquo;)&nbsp;&mdash; программа по&nbsp;улучшению жилищных условий граждан, объявленная Президентом Российской Федерации Владимиром Владимировичем Путиным 5&nbsp;сентября 2005 года на&nbsp;его встрече с&nbsp;правительством, парламентом и&nbsp;главами регионов в&nbsp;рамках Программы приоритетных национальных проектов.
+
+                        a(href="") Информация о программе
+
+                .justifyed
+                    .one-half
+                        p 24&nbsp;сентября 2008 года заместитель Председателя Правительства Российской Федерации Александр Жуков объявил о&nbsp;том, что проект будет &laquo;переформатирован&raquo; в&nbsp;государственную программу, реализация которой начнётся с&nbsp;2009&nbsp;года. Однако, на&nbsp;заседании Совета по&nbsp;реализации национальных проектов 24&nbsp;декабря 2008 года статус проекта был сохранен (в&nbsp;Госпрограмму был переведен национальный проект &laquo;Развитие АПК&raquo;). По&nbsp;состоянию на&nbsp;начало 2013&nbsp;года, формально национальный проект не&nbsp;отменен и&nbsp;был упомянут в&nbsp;послании Федеральному собранию Президента РФ&nbsp;Путина, но&nbsp;о&nbsp;существовании конкретных планов по&nbsp;его реализации ничего неизвестно. Координирующий проект орган (межведомственная рабочая группа) был ликвидирован в&nbsp;2012&nbsp;году.
+
+                    .one-half
+                        p Наши проекты, участвующие в программе:
+                        a(href="") Версаль
+                        a(href="") 3 авеню
+                        a(href="") Печёра
+                        a(href="") Гастелло
+                        a(href="") Южный город
+                        a(href="")                              Желябово.рф
+
+                .object--contacts
+                    h4 Обращайтесь к нам по телефону
+                        a(href="tel:8-800-700-55-22").phone
+                            =" "
+                            strong 8-800-700-55-22
+                    h4
+                        ="Наша электронная почта:"
+                        =" "
+                        a(href="mailto:mail@dkdrevo.ru").mail mail@dkdrevo.ru
+
+        ul.news-list
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-1.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Снова победа!
+                    p Праздник, организованный в&nbsp;честь 3-летия микрорайона &laquo;Южный город&raquo; стал событием года.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-2.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Древо — лучшие!
+                    p Команда ООО &laquo;ДК&nbsp;Древо&raquo; одержала убедительную победу в&nbsp;&laquo;МозгоБойне&raquo; от&nbsp;Woman&rsquo;s Day и&nbsp;Телесемь-Самара.
+
+            li.news-list--el.one-third
+                a(href="" style="background: url('../../../img/img--index-5-3.jpg') no-repeat 50% 0%").news-list--el-img.bg-cover
+
+                .news-list--el-content
+                    a(href="").news-list--el-time
+                        time 20.04.2017
+                    a(href="").news-list--el-title Ипотека 8,4%
+                    p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;
+
+
+    footer.section.index--footer.footer.footer-slider
+        include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/program-tablet.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

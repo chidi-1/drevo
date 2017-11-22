@@ -1,0 +1,98 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .fullpage.anchors
+        .section.section-title.bg-cover( data-anchor="" style="background: url('../../../img/bg--about-top.jpg') no-repeat 50% 50%" data-desktop="../../../img/bg--about-top.jpg" data-tablet="../../../img/bg--about-top-tablet.jpg" data-mobile="../../../img/bg--about-top-mobile.jpg")
+            .section-bottom-content
+                .width-wrap
+                    ul.breadcrumbs
+                        li
+                            a(href="") Древо
+                        li
+                            a(href="") О компании
+
+                    h1  О компании
+
+        .section(data-anchor="Позиционирование").about-text
+            .width-wrap.justifyed.pt-140
+                .one-half
+                    img(src="../../../img/img--about-position.jpg" alt /)
+
+                .one-half
+                    p Девелоперская компания &laquo;Древо&raquo;&nbsp;&mdash; один из&nbsp;лидеров рынка девелопмента и&nbsp;строительства Самарской области. Своей целью &laquo;Древо&raquo; ставит повышение качества жизни населения России через массовое строительство комфортного, но&nbsp;доступного всем, современного разноформатного жилья.
+                    p В&nbsp;распоряжении компании находится свыше 1&nbsp;000&nbsp;га земли в&nbsp;городской черте Самары под жилищную и&nbsp;коммерческую застройку. Общая площадь земельных активов &laquo;Древо&raquo; превышает 5&nbsp;тысяч&nbsp;га. Компания обладает портфелем проектов масштабом свыше 3&nbsp;млн&nbsp;кв.&nbsp;м&nbsp;жилья. Компания делает ставку на&nbsp;комплексное долгосрочное планирование своей деятельности.
+                    p ДК&nbsp;&laquo;Древо&raquo; имеет опыт выполнения общестроительных работ для заказчиков энергетической, нефтегазовой, пищевой и&nbsp;других отраслей промышленности в&nbsp;различных регионах России.
+
+        .section.about--promo.bg-cover(style="background: url('../../../img/bg--about-promo.jpg') no-repeat 50% 50%" data-anchor="Задача")
+            .width-wrap.pt-140
+                p Своей
+                    =" "
+                    strong задачей
+                    ="   компания «Древо» ставит эффективное для себя и обществаразвитие имеющихся активов в Самаре и Самарской области"
+
+        .section(data-anchor="Миссия").about-text
+            .width-wrap.justifyed.pt-140
+                .one-half
+                    p Компания
+                        =" "
+                        strong создает
+                        =" вертикально-интегрированный холдинг, включающий домостроительный комбинат. "
+
+                    p
+                        a(href="") Домостроительный комбинат «Древо»
+                        =" — современное высокоавтоматизированное производство строительных материалов с широким охватом номенклатуры железобетонных изделий. Основное назначение продукции — комплектация застройки района Южный город (60-70% производственных мощностей) и удовлетворение потребностей регионального рынка (30-40%)."
+
+                    ul.text
+                        li Общая площадь земельных активов &laquo;Древо&raquo; превышает 3000&nbsp;га.
+                        li Компания обладает портфелем проектов свыше 3&nbsp;млн.&nbsp;кв.м. жилья.
+                        li В&nbsp;год компания сдает свыше 200&nbsp;000 кв.м жилья.
+                        li Собственное производство стройматериалов.
+
+                .one-half
+                    img(src="../../../img/logo--about-business.png" alt /)
+                    p Девелоперская компания &laquo;Древо&raquo; входит в&nbsp;инвестиционно-финансовую группу &laquo;БизнесСфера&raquo;, объединяющую разноотраслевые предприятия, реализующие масштабные инвестиционные проекты в&nbsp;области парфюмерно-косметического производства, строительства и&nbsp;девелопмента, управления недвижимостью и&nbsp;оказания услуг.
+
+        .section(data-anchor="Стратегия").about--strategy
+            .width-wrap.justifyed.pt-140
+                .one-half
+                    img(src="../../../img/img--about-strategy-1.jpg" alt /)
+                    img(src="../../../img/img--about-strategy-2.jpg" alt /)
+
+                .one-half
+                    p Девелоперская компания «Древо» участвует в реализации национального проекта «
+                        a(href="") Доступное и комфортное жилье — гражданам России
+                        ="», обладает налаженными связями в федеральных и региональных органах власти."
+
+                    p Все планы ДК&nbsp;&laquo;Древо&raquo; взаимосвязаны, имеют долгосрочную перспективу и&nbsp;социо-маркетинговое обоснование. Это обеспечивает их&nbsp;востребованность в&nbsp;обществе и&nbsp;высокую доходность реализации для инвесторов.
+
+                    p
+                        strong Стратегическими
+                        =" для компании «Древо» являются программы «"
+                        a(href="") Моя Самара
+                        ="» и «"
+                        a(href="") Южный город
+                        ="Южный город"
+
+                    p Обе программы сегодня активно реализуются при поддержке властей Самары и&nbsp;Самарской области.
+
+        .section(data-anchor="")
+            .fullpage--inner-slider
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+
+
+        footer(data-anchor="").section.footer.footer-anchors.footer-slider
+            .section-center-content
+                include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/main.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

@@ -1,0 +1,45 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") Новости
+                li
+                    span Ипотека 8,4%
+
+            h1 Ипотека 8,4%
+
+            .justifyed.news-article
+                .two-third
+                    p С&nbsp;3&nbsp;апреля минимальная ставка на&nbsp;приобретение квартиры в&nbsp;новостройках компании &laquo;Древо&raquo; составляет 8,4% при условии использования услуги электронной регистрации сделки и&nbsp;страхования жизни и&nbsp;здоровья заемщика.
+                    p Сервис &laquo;Электронная регистрация&raquo; позволяет покупателям квартир в&nbsp;новостройках зарегистрировать договор с&nbsp;застройщиком без посещения Росреестра или МФЦ и&nbsp;сократить время оформления всех документов до&nbsp;5-7&nbsp;дней.
+                    p Для заемщиков, желающих оформить жилищный кредит без подтверждения            доходов и&nbsp;трудовой занятости, процентная ставка в&nbsp;рамках акции составит от&nbsp;8,9%.
+                    p Первоначальный взнос&nbsp;&mdash; от&nbsp;15% от&nbsp;стоимости объекта недвижимости. Жилищный кредит предоставляет на&nbsp;срок от&nbsp;12&nbsp;до&nbsp;84&nbsp;месяцев. Совместная с&nbsp;застройщиками акция со&nbsp;сниженными ставками продлится до&nbsp;31&nbsp;декабря 2017&nbsp;года.
+                    p Мечты о&nbsp;собственной квартире легко исполнить благодаря специальному предложению от&nbsp;Сбербанка и&nbsp;ДК&nbsp;&laquo;Древо&raquo;.
+
+                    time 11.06.2017
+
+                .one-third
+                    img(src="../../../img/img--news-article.jpg" alt /)
+
+            .btn-wrap.news-article-btn
+                a(href="" data-method="post" data-action="../../../js/ajax/load-news.php").btn.btn-s Архив новостей
+
+    footer(data-anchor="").footer
+        include ../../partials/footer
+
+    <!-- Этот скрипт на сервере всегда удалять -->
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/news--article-tablet.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

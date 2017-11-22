@@ -1,0 +1,102 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    .fullpage.production
+        .section.section-title.bg-cover(style="background: url('../../../img/bg--production-top.jpg') no-repeat 50% 50%" data-desktop="../../../img/bg--production-top.jpg" data-tablet="../../../img/bg--production-top-tablet.jpg" data-mobile="../../../img/bg--production-top-mobile.jpg")
+            .section-bottom-content
+                .width-wrap
+                    ul.breadcrumbs
+                        li
+                            a(href="") Древо
+                        li
+                            a(href="") Производство ДСК
+
+                    h1  Производство
+                        small Домостроительный комбинат «Древо»
+
+        .section.section-text
+            .width-wrap.justifyed.pt-70
+                .one-half
+                    img(src="../../../img/img--production-2.jpg" alt /)
+
+                .one-half
+                    h5 Домостроительный комбинат &laquo;Древо&raquo;&nbsp;&mdash; современное высокоавтоматизированное производство строительных материалов с&nbsp;широким охватом номенклатуры железобетонных изделий.
+                    h5
+                        strong Основное назначение продукции
+
+                    p Комплектация застройки района
+                        =" "
+                        a(href="") Южный город
+                        =" (60-70% производственных мощностей) и удовлетворение потребностей регионального рынка (30-40%)."
+
+        .section.section-text
+            .width-wrap.justifyed.pt-70
+                .one-half
+                    h5
+                        strong Назначение предприятия
+
+                    p Производство железобетонных конструкций зданий, возводимых по&nbsp;современной индустриальной технологии.
+
+                    span
+                        strong Крупно-панельное и каркасно-панельное домостроение:
+                    ul.text
+                        li сваи (монолитные и пустотные);
+                        li плиты перекрытий (преднапряженные с канатным каркасом);
+                        li несущие наружные трехслойные панели и монолитные внутренние стены.
+
+                    span
+                        strong Колонные и ригельные конструкции:
+                    ul.text
+                        li колонна, ригель;
+                        li наружные навесные ограждающие панели.
+
+                    span
+                        strong Изделия общего применения:
+                    ul.text
+                        li вентканалы, лестничные марши и площадки, балконные плиты, лифтовые шахты.
+
+                .one-half
+                    img(src="../../../img/img--production-3.jpg" alt /)
+
+        .section.bg-cover(style="background: url('../../../img/bg--production-mission.jpg') no-repeat 50% 50%")
+            ul.fullpage--bottom-list.section-bottom-content
+                li.one-third.bg-brown-tr Мощность производства&nbsp;&mdash; 300&nbsp;тыс.&nbsp;кв.м.&nbsp;в&nbsp;год жилых площадей
+                li.one-third.bg-green-tr Объем производства&nbsp;&mdash; 450 человек
+                li.one-third.bg-blue-tr Мощность производства&nbsp;&mdash; 75&nbsp;тыс.&nbsp;кв.м.&nbsp;в&nbsp;год производственных объектов
+
+        .section.section-text
+            .width-wrap.justifyed.pt-70
+                .one-half
+                    img(src="../../../img/img--production-5.jpg" alt /)
+
+                .one-half
+                    h5 Особенности технологии производства
+
+                    ul.text
+                        li Возможность строительства зданий разного типа и&nbsp;этажности.
+                        li Обеспечение свободной планировки внутриквартирного и&nbsp;внутриэтажного пространства.
+                        li Применение декоративных многовариантных фасадов с&nbsp;улучшенной заделкой контактных швов и&nbsp;соединений.
+
+                    h5 Существенным преимуществом данного производства является возможность поставки заказчику полных сборных комплектов зданий.
+
+        .section
+            .fullpage--inner-slider
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--production--slider.jpg) no-repeat 50% 70%" alt /)
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+                .fullpage--inner-slider-el(style="background: url(../../../img/img--about-slider.jpg) no-repeat 50% 70%" alt /)
+
+
+        footer.section.footer.footer-slider
+            .section-center-content
+                include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/main.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

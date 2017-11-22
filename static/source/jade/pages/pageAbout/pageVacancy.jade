@@ -1,0 +1,136 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") О компании
+                li
+                    span Вакансии
+
+            h1 Вакансии
+
+            .vacancy.accordeon
+                .vacancy--el
+                    .acc_trigger
+                        .icon
+                        span  Администратор офиса продаж
+
+                    .acc_container
+                        .content
+                            p
+                                strong Должностные обязанности:
+                                ="Ведение технологических процессов производства на агрегатах с единичной мощностью без наличия резервного оборудования не&nbsp;менее чем на&nbsp;трех взаимосвязанных стадиях на&nbsp;производстве аммиака или метанола."
+                            p
+                                strong Требования:
+                                ="Высшее профессиональное (техническое) образование."
+                            p
+                                strong Мы&nbsp;предлагаем:
+                                ="Характер работы:  постоянная, сменный график работы (8:00-20:00, 20:00-8:00), доставка транспортом предприятия."
+
+                            a(href="#form" data-select="Администратор офиса продаж").btn.js--page-scroll.js--change-select Отправить резюме
+
+                .vacancy--el
+                    .acc_trigger
+                        .icon
+                        span Оператор ДПУ в&nbsp;химическом производстве (старший)
+
+                    .acc_container
+                        .content
+                            p
+                                strong Должностные обязанности:
+                                ="Ведение технологических процессов производства на агрегатах с единичной мощностью без наличия резервного оборудования не&nbsp;менее чем на&nbsp;трех взаимосвязанных стадиях на&nbsp;производстве аммиака или метанола."
+                            p
+                                strong Требования:
+                                ="Высшее профессиональное (техническое) образование."
+                            p
+                                strong Мы&nbsp;предлагаем:
+                                ="Характер работы:  постоянная, сменный график работы (8:00-20:00, 20:00-8:00), доставка транспортом предприятия."
+
+                            a(href="#form" data-select="Оператор ДПУ в&nbsp;химическом производстве (старший)").btn.js--page-scroll.js--change-select Отправить резюме
+
+                .vacancy--el
+                    .acc_trigger
+                        .icon
+                        span Название вакансии
+
+                    .acc_container
+                        .content
+                            p
+                                strong Должностные обязанности:
+                                ="Ведение технологических процессов производства на агрегатах с единичной мощностью без наличия резервного оборудования не&nbsp;менее чем на&nbsp;трех взаимосвязанных стадиях на&nbsp;производстве аммиака или метанола."
+                            p
+                                strong Требования:
+                                ="Высшее профессиональное (техническое) образование."
+                            p
+                                strong Мы&nbsp;предлагаем:
+                                ="Характер работы:  постоянная, сменный график работы (8:00-20:00, 20:00-8:00), доставка транспортом предприятия."
+
+                            a(href="#form" data-select="Название вакансии").btn.js--page-scroll.js--change-select Отправить резюме
+
+                .vacancy--el
+                    .acc_trigger
+                        .icon
+                        span Специалист отдела снабжения
+
+                    .acc_container
+                        .content
+                            p
+                                strong Должностные обязанности:
+                                ="Ведение технологических процессов производства на агрегатах с единичной мощностью без наличия резервного оборудования не&nbsp;менее чем на&nbsp;трех взаимосвязанных стадиях на&nbsp;производстве аммиака или метанола."
+                            p
+                                strong Требования:
+                                ="Высшее профессиональное (техническое) образование."
+                            p
+                                strong Мы&nbsp;предлагаем:
+                                ="Характер работы:  постоянная, сменный график работы (8:00-20:00, 20:00-8:00), доставка транспортом предприятия."
+
+                            a(href="#form" data-select="Специалист отдела снабжения").btn.js--page-scroll.js--change-select Отправить резюме
+
+            form(id="form" action="../../../js/ajax/send-ok-php" method="post").main-form.vacancy-form
+                h5 Откликнуться на вакансию
+
+                label
+                    span Название вакансии
+
+                    select(name="vacancy").js--select-styled.js--changed-select
+                        option( selected disabled) Выберите вакансию
+                        option(value="Администратор офиса продаж") Администратор офиса продаж
+                        option(value="Оператор ДПУ в химическом производстве (старший)") Оператор ДПУ в&nbsp;химическом производстве (старший)
+                        option(value="Название вакансии") Название вакансии
+                        option(value="Специалист отдела снабжения") Специалист отдела снабжения
+
+                label
+                    span ФИО
+                    input(type="text" name="").inp.required
+                label
+                    span E-mail
+                    input(type="text" name="").inp.required.inp-mail
+                label
+                    span Телефон
+                    input(type="text" name="").inp.required.inp-phone
+                label
+                    span Информация о&nbsp;себе
+                    textarea(name="").inp
+                label
+                    span
+                    input(type="file").js--select-file
+
+                a(href="").btn.btn-red Отправить
+
+    footer(data-anchor="").section.footer.footer-anchors
+        include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/vacancy-mobile.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

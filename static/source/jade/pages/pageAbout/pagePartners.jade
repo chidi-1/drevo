@@ -1,0 +1,114 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") О компании
+                li
+                    span Инвесторам и партнерам
+
+            h1 Инвесторам и партнерам
+
+            .justifyed.partners
+                .one-half
+                    p Мы&nbsp;ценим наших партнеров и&nbsp;предоставляем им&nbsp;все необходимые условия для успешного и&nbsp;профессионального ведения бизнеса. Мы&nbsp;заинтересованы в&nbsp;результатах взаимовыгодного сотрудничества и&nbsp;приложим все усилия для успешного партнерства в&nbsp;рамках предлагаемых программ.
+                    p &laquo;Древо&raquo; готово выстраивать долгосрочные взаимоотношения, как на&nbsp;стратегическом, так и&nbsp;на&nbsp;среднесрочном уровне, со&nbsp;всеми финансовыми, промышленными, коммерческими структурами, имеющими коммерческие интересы относительно Самарской и&nbsp;Оренбургской областей.
+                    p Изменение масштаба бизнеса, расширение сферы деятельности с&nbsp;регионального до&nbsp;федерального уровня требуют привлечения партнеров соответствующего класса, способными включится в&nbsp;реализацию долгосрочных и&nbsp;объемных проектов &laquo;Древо&raquo;.
+                    p ДК&nbsp;&laquo;Древо&raquo; имеет свою комплексную стратегию развития земельных активов. Если покупатель земельных активов планирует застроить покупаемую землю в&nbsp;соответствии со&nbsp;стратегией компании &laquo;Древо&raquo;, ему могут быть предоставлены особые льготные условия сделки.
+
+                    h5.small Для нас очень важен целенаправленный маркетинг инвестиционных проектов. Все проекты компании &laquo;Древо&raquo; и&nbsp;его соинвесторов активно продвигаются и&nbsp;системно поддерживаются.
+
+                .one-half
+                    img(src="../../../img/img--partner.jpg" alt /)
+
+                    h5.small Вектора привлечения инвесторов и&nbsp;партнеров
+
+                    p
+                        strong Кредитование и&nbsp;соинвестирование по&nbsp;реализации &laquo;точечных&raquo; девелоперских проектов:
+
+
+
+                    ul.text
+                        li Жилая и&nbsp;коммерческая застройка Самары и&nbsp;Ульяновска по&nbsp;готовым проектам,
+                        li Строительство разноплановых дачных и&nbsp;коттеджных поселков в&nbsp;Самарской области,
+
+                    p
+                        strong Совместная перспективная работа по&nbsp;развитию проекта &laquo;Южный город&raquo;:
+
+                    ul.text
+                        li Участие в&nbsp;разработке мегапроекта,
+                        li Интеграция в&nbsp;концепцию собственных девелоперских проектов,
+                        li Стратегическое кредитование,
+
+                    p
+                        strong Продажа земли в&nbsp;Самарской и&nbsp;Оренбургской областях под проекты инвестора.
+
+
+            h3 Отчеты
+
+            .data-container
+                form(action="../../../js/ajax/load-date.php" method="post").date-form
+                    span C
+
+                    input(type="text" name="" value="дд.мм.гггг").inp.js--inp-calendar
+
+                    span по
+
+                    input(type="text" name="" value="дд.мм.гггг").inp.js--inp-calendar.js--inp-calendar1
+
+                    a(href="").btn.btn-red.js--set-filter Найти
+
+                .load-container
+                    .width-wrap
+                        ul.report-list
+                            li
+                                .report-list--links
+                                    a(href="")
+                                        img(src="../../../img/icon--pdf.svg" alt /)
+                                    a(href="")
+                                        img(src="../../../img/icon--zip.svg" alt /)
+                                    a(href="")
+                                        img(src="../../../img/icon--doc.svg" alt /)
+
+                                time.report-list--time 07.02.2017
+
+                                span.report-list--name Название отчета
+
+                            li
+                                .report-list--links
+                                    a(href="")
+                                        img(src="../../../img/icon--doc.svg" alt /)
+
+                                time.report-list--time  07.02.2017
+
+                                span.report-list--name Регламент признания юридических и&nbsp;физических лиц квалифицированными  инвесторами Акционерного общества Управляющая компания
+
+                            li
+                                .report-list--links
+                                    a(href="")
+                                        img(src="../../../img/icon--zip.svg" alt /)
+                                    a(href="")
+                                        img(src="../../../img/icon--doc.svg" alt /)
+
+                                time.report-list--time 07.02.2017
+
+                                span.report-list--name Регламент признания юридических и&nbsp;физических лиц квалифицированными  инвесторами Акционерного общества Управляющая компания
+
+
+    footer(data-anchor="").section.footer
+        include ../../partials/footer
+
+         <!-- Этот скрипт на сервере всегда удалять -->
+         script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/partners-tablet.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

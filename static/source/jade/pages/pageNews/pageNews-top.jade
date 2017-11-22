@@ -1,0 +1,69 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    span Новости
+
+            h1 Новости
+
+            .justifyed.news-top
+                .two-third
+                    .justifyed
+                        img(src="../../../img/img--news-top.jpg" alt)
+
+                        h6
+                            strong Ландшафтный дизайн в&nbsp;микрорайоне &laquo;Южный город&raquo;
+
+                    p В&nbsp;год экологии в&nbsp;России компания &laquo;Древо&raquo; подарила жителям микрорайона Южный город декорирование дворовых газонов инертными материалами. Это первый пример подобного ландшафтного декора в&nbsp;массовых застройках.
+                    p Технология декоративной отсыпки газонов инертными материалами широко используется в&nbsp;Европе. Осуществляется она в&nbsp;три этапа.
+                    p Первый&nbsp;&mdash; уборка сорной травы и&nbsp;растительности, второй&nbsp;&mdash; настил геотекстиля, третий&nbsp;&mdash; выкладывание рисунка природным камнем.
+                    p Для оформления газонов в&nbsp;Южном городе используется разноцветный камень, разной структуры и&nbsp;формации. Весь материал сертифицирован и&nbsp;разрешен для использования в&nbsp;жилых постройках.
+                    p Как рассказал начальник участка благоустройства управляющей компании &laquo;ЮГ-Сервис&raquo; Антон Бердников: &laquo;В&nbsp;этом году будут задекорированы газоны всех кварталов второй очереди микрорайона. Если жителям подобное оформление придется по&nbsp;вкусу, то&nbsp;декор будет продолжен и&nbsp;в&nbsp;других очередях Южного города&raquo;.
+
+                    time 11.06.2017
+
+                    .btn-wrap
+                        a(href="").btn.btn-s Архив новостей
+
+                .one-third
+                    ul.news-hot
+                        li
+                            time 11.06.2017
+                            a(href="")
+                                strong Радужный слон в&nbsp;&laquo;Южном городе&raquo;! Микрорайон отметил &laquo;День детства&raquo;.
+                        li
+                            time 11.06.2017
+                            a(href="")
+                                strong Тринадцатое новоселье в&nbsp;&laquo;Южном городе&raquo;
+                        li
+                            time 11.06.2017
+                            a(href="")
+                                strong Пресс-тур на&nbsp;&laquo;ДСК Древо&raquo; состоялся
+                        li
+                            time 11.06.2017
+                            a(href="")
+                                strong Пресс-тур на&nbsp;&laquo;ДСК Древо&raquo; состоялся
+                        li
+                            time 11.06.2017
+                            a(href="")
+                                strong С&nbsp;Днем рождения, Версаль!
+
+    footer(data-anchor="").footer
+        include ../../partials/footer
+
+    <!-- Этот скрипт на сервере всегда удалять -->
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/news--top-mobile.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

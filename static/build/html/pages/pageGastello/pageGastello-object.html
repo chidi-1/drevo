@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width" viewport="width=device-width">
+    <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="../../../js/app-common.js"></script>
+    <script src="../../../js/app.js"></script><!-- ���� ������ �� ������� ������ ������� -->
+    <script src="../../../js/jquery.pixlayout.0.9.6.js"></script><!-- ���� ������ �� ������� ������ ������� -->
+  </head>
+  <!-- http://jade-lang.com/reference/mixins/-->
+  <body>
+    <div class="page-wrap">
+      <header class="header">
+        <div class="width-wrap justifyed">
+          <nav><a href="" class="header--logo"><img src="../../../img/logo--header.svg" alt /></a><a href="" class="header--hamburger js--open-menu">
+              <svg viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,10H20V8H0ZM0,6H20V4H0ZM0,2H20V0H0Z"></path>
+              </svg></a>
+            <ul class="header--nav">
+              <li class="js--open-dropdown"><a href="">О компании</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">Инвесторам</a></li>
+                    <li><a href="">Господдержка</a></li>
+                    <li><a href="">Вакансии</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="js--open-dropdown"><a href="">Объекты</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">3 авеню</a></li>
+                    <li><a href="">Печёра</a></li>
+                    <li><a href="">Гастелло</a></li>
+                    <li><a href="">Южный город</a></li>
+                    <li><a href=""> Желябово.рф</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="js--open-dropdown"><a href="">Управление недвижимостью</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">Эксплуатация объектов</a></li>
+                    <li><a href="">Аренда И&nbsp;ПРОДАЖА АКТИВОВ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Производство</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Подрядчикам и поставщикам</a></li>
+            </ul>
+          </nav><a href="" class="header--lk">Кабинет поставщика</a>
+        </div>
+      </header>
+      <main>
+        <div style="background: url('../../../img/bg--gastello-top.jpg') no-repeat 50% 50%" class="object--top">
+          <div class="width-wrap">
+            <ul class="breadcrumbs">
+              <li><a href="">Древо</a></li>
+              <li><a href="">Объекты</a></li>
+              <li><span>Гастелло</span></li>
+            </ul>
+            <h1>Гастелло</h1>
+          </div>
+        </div>
+        <ul class="object--social mb-70">
+          <li class="one-fourth bg-red"><a href=""><img src="../../../img/icon--globus-white.svg" alt /><br><span>гастелло.рф</span></a></li>
+          <li class="one-fourth bg-blue-d"><a href=""><img src="../../../img/icon--fb-white.svg" alt /><span>гастелло.рф</span></a></li>
+          <li class="one-fourth bg-blue-l"><a href=""><img src="../../../img/icon--vk-white.png" alt /><span>гастелло.рф</span></a></li>
+          <li class="one-fourth bg-beige"><a href=""><img src="../../../img/icon--in-white.svg" alt /><span>гастелло.рф</span></a></li>
+        </ul>
+        <div class="width-wrap justifyed mb-70">
+          <div class="one-half"><img src="../../../img/logo--gastello.jpg" alt /></div>
+          <div class="one-half">
+            <h4 class="small">Концепция</h4>
+            <p>Жилой 24-х этажный комплекс из&nbsp;монолитного бетона. На&nbsp;первом этаже располагаются коммерческие площади, имеется подземный паркинг. Несущие конструкции секций жилого дома&nbsp;&mdash; монолитный, железобетонный каркас. Ограждающие конструкции&nbsp;&mdash; керамзитобетонные блоки.</p>
+            <h4 class="small">Расположение</h4>
+            <p>Квадрат застройки в&nbsp;примыкании к&nbsp;ул. Гастелло, Московскому шоссе и&nbsp;ул. Советской Армии.</p>
+          </div>
+        </div>
+        <div class="object-slider fullpage--inner-slider mb-70">
+          <div style="background: url('../../../img/img--slider-gastello-1.jpg') no-repeat 50% 50%" alt /></div>
+          <div style="background: url('../../../img/img--slider-avenue-2.jpg') no-repeat 50% 50%" alt /></div>
+        </div>
+        <div class="width-wrap">
+          <div class="justifyed mb-70">
+            <div class="one-half">
+              <h4 class="small">Основные параметры</h4>
+              <p>Участок площадью 8&nbsp;774&nbsp;кв.&nbsp;м, общая площадь строительства&nbsp;&mdash; 40&nbsp;480&nbsp;кв.&nbsp;м, общая жилая площадь 36 542,4&nbsp;кв.&nbsp;м. Площадь под офисы и&nbsp;магазины&nbsp;&mdash; 3&nbsp;938 кв.м. В&nbsp;крытом паркинге 220&nbsp;машиномест.</p>
+              <h4 class="small">Квартирография</h4>
+              <p> 782&nbsp;квартиры, средние площади: 1- комн. квартир&nbsp;&mdash; 39,0&nbsp;кв.&nbsp;м&nbsp;&mdash; 50%, 2- комн. квартир&nbsp;&mdash; 50,0&nbsp;кв.&nbsp;м&nbsp;&mdash; 35%, 3- комн. квартир&nbsp;&mdash; 70,0&nbsp;кв.&nbsp;м.</p>
+            </div>
+            <div class="one-half"><img src="../../../img/img--gastello-1.jpg" alt /></div>
+          </div>
+          <div class="justifyed mb-70">
+            <div class="one-half"><img src="../../../img/img--gastello-2.jpg" alt /><img src="../../../img/img--gastello-3.jpg" alt /></div>
+            <div class="one-half">
+              <h6>Жилой комплекс Гастелло.РФ&nbsp;&mdash; это дом молодых семей, дом &laquo;первой квартиры&raquo;. Наличие просторного встроенного паркинга соответствует долгосрочным тенденциям автомобилизации. Городской парк, молл дают возможность отдыха и&nbsp;шопинга рядом с&nbsp;домом. Низкая цена за&nbsp;квадратный метр для покупателя не&nbsp;будет означать потерю комфорта. В&nbsp;доме запланированы просторные общие вестибюли, места дл&nbsp;я&nbsp;консьержа, большая детская дворовая площадка.</h6>
+              <h4 class="small">Сервис и&nbsp;инфраструктура</h4>
+              <p>В&nbsp;комплексе имеются собственные встроенные торговые площади, ориентированные на&nbsp;жителей дома. В&nbsp;300 метрах от&nbsp;комплекса находится городской парк развлечений&nbsp;им. Ю.&nbsp;Гагарина. Рядом находится молл &laquo;Парк Хаус&raquo;. Неподалеку находится ТЦ&nbsp;&laquo;Апельсин&raquo;, гипермаркет &laquo;Матрица&raquo;. Рядом садик и&nbsp;школа.</p>
+              <h4 class="small">Юридический статус</h4>
+              <p>Земельный участок находится в&nbsp;аренде. Начало строительства&nbsp;&mdash; 2013&nbsp;год, в&nbsp;конце 2014 года ЖК&nbsp;&laquo;Гастелло.РФ&raquo; введен в&nbsp;эксплуатацию.</p>
+            </div>
+          </div>
+        </div>
+        <ul class="justifyed object--info">
+          <li class="one-third bg-red"><span>3 938 кв.м.<i>площадь</i><i>под офисы</i></span></li>
+          <li class="one-third bg-green"><span>36 542,4 кв.м.<i>общая площадь</i><i>строительства</i></span></li>
+          <li class="one-third bg-blue"><span>220 машиномест<i>в крытом</i><i>паркинге</i></span></li>
+        </ul>
+        <div class="justifyed"><a href="" style="background: url('../../../img/bg--gastello-2.jpg') no-repeat 50% 50%" class="one-half objects-complex-s">
+            <div class="content">
+              <h3><strong>Продажа<i> активов</i></strong><small>Гастелло</small></h3>
+            </div></a><a href="" style="background: url('../../../img/bg--gastello-3.jpg') no-repeat 50% 50%" class="one-half objects-complex-s">
+            <div class="content">
+              <h3><strong>Аренда<i>коммерческой</i><i>недвижимости</i></strong><small>Гастелло</small></h3>
+            </div></a></div>
+      </main>
+      <footer class="section footer">
+        <div class="width-wrap">
+          <div class="justifyed">
+            <div class="footer--left">
+              <ul class="footer-projects">
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">3 авеню</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Печёра</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Гастелло</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Южный город</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Желябово.рф</a></li>
+              </ul>
+            </div>
+            <div class="footer--right"><span class="strong">ООО «ДК «Древо»</span><span class="strong">г. Самара, ул. Неверова, 33</span><a href="tel:88007005522" class="strong">8-800-700-55-22</a></div>
+          </div>
+          <div class="justifyed">
+            <div class="footer--left mobile-position"><span>© 2017 ДК «ДРЕВО»</span><a href="" class="underline">Карта сайта</a></div>
+            <div class="footer--right"><span>Мы в соцсетях</span>
+              <ul class="social">
+                <li><a href=""><img src="../../../img/social--gm.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--fb.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--tw.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--in.jpg"></a></li>
+              </ul>
+              <p>Обращаем ваше внимание, что вся информация, размещенная на&nbsp;сайте, носит ознакомительный характер и&nbsp;не&nbsp;является публичной офертой.</p>
+            </div>
+          </div>
+          <div class="justifyed">
+            <div class="footer--left"><span class="gray">Разработка сайта —<a href="" target="_blank" class="underline">RuMaster</a></span></div>
+            <div class="footer--right"><a href="" class="fancybox.ajax fancy underline">Политика конфиденциальности</a></div>
+          </div>
+        </div><!-- Этот скрипт на сервере всегда удалять -->
+        <script type="text/javascript">$(function(){$.pixlayout({src: "../../../img/temp/avenue-object.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});</script>
+      </footer>
+    </div>
+  </body>
+</html>

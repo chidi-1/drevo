@@ -1,0 +1,123 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .object--top(style="background: url('../../../img/bg--pechera-top.jpg') no-repeat 50% 50%")
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="") Древо
+                    li
+                        a(href="") Объекты
+                    li
+                        span Печера
+
+                h1 Печера
+
+        ul.object--social.mb-70
+            li.one-fourth.bg-red
+                a(href="")
+                    img(src="../../../img/icon--globus-white.svg" alt /)
+                    br
+                    span Печера.рф
+            li.one-fourth.bg-blue-d
+                a(href="")
+                    img(src="../../../img/icon--fb-white.svg" alt /)
+                    span @Печера.рф
+            li.one-fourth.bg-blue-l
+                a(href="")
+                    img(src="../../../img/icon--vk-white.png" alt /)
+                    span @Печера.рф
+            li.one-fourth.bg-beige
+                a(href="")
+                    img(src="../../../img/icon--in-white.svg" alt /)
+                    span @Печера.рф
+
+        .width-wrap.justifyed.mb-70
+            .one-half
+                img(src="../../../img/logo--pechera.jpg" alt /)
+
+            .one-half
+                h4.small Концепция
+                p Жилой комплекс, 6&nbsp;секций, 19-24 этажа из&nbsp;монолитного бетона. На&nbsp;первом этаже располагаются офисы и&nbsp;магазины, имеется подземный паркинг. Несущие конструкции секций жилого дома&nbsp;&mdash; монолитный, железобетонный каркас. Ограждающая конструкция&nbsp;&mdash; керамзитобетонные блоки.
+
+                h4.small Расположение
+                p ул. Печёрская, в&nbsp;700 метрах расположен молл, площадью свыше 100&nbsp;000 кв.м, в&nbsp;400 метрах&nbsp;&mdash; станция метро.
+
+        .object-slider.fullpage--inner-slider.mb-70
+            div(style="background: url('../../../img/img--slider-pechera-1.jpg') no-repeat 50% 50%" alt /)
+            div(style="background: url('../../../img/img--slider-avenue-2.jpg') no-repeat 50% 50%" alt /)
+
+        .width-wrap
+            .justifyed.mb-70
+                .one-half
+                    h4.small Основные параметры
+                    p Площадь земельного участка&nbsp;&mdash; 0,87&nbsp;га. Общая площадь строительства&nbsp;&mdash; 55&nbsp;890&nbsp;кв.&nbsp;м. Площадь торгово-офисных помещений&nbsp;&mdash; 3 238,72&nbsp;кв.&nbsp;м. Площадь паркинга&nbsp;&mdash; 2&nbsp;070&nbsp;кв.&nbsp;м.
+
+                    h4.small Квартирография
+                    p 691&nbsp;квартира. 1-комн. &mdash;&nbsp;384 квартиры (55,6%), 2-комн. &mdash;&nbsp;203 квартиры (29,4%), 3-комн. &mdash;&nbsp;104 квартиры (15%). Средние площади квартир : 1- комн. &mdash;&nbsp;39,01&nbsp;кв.&nbsp;м, 2- комн. &mdash;&nbsp;66,1&nbsp;кв.&nbsp;м, 3- комн. &mdash;&nbsp;80,02&nbsp;кв.&nbsp;м.
+
+                .one-half
+                    img(src="../../../img/img--pechera-1.jpg" alt /)
+
+            .justifyed.mb-70
+                .one-half
+                    img(src="../../../img/img--pechera-2.jpg" alt /)
+                    img(src="../../../img/img--pechera-3.jpg" alt /)
+
+                .one-half
+                    h6 &laquo;Печёра.РФ&raquo;&nbsp;&mdash; первый проект в&nbsp;программе &laquo;Моя Самара&raquo;&nbsp;&mdash; застройка Самары комфортными и&nbsp;недорогими современными жилыми комплексами.
+
+                    h4.small Сервис и&nbsp;инфраструктура
+                    p Одноуровневый подземный паркинг на&nbsp;72&nbsp;машины, одно машиноместо на&nbsp;12&nbsp;квартир. Большая уличная парковка, расширенные вестибюльные зоны, пост охраны (консьерж), визульно &laquo;облегчающее&raquo; фасад цветовое решение. В&nbsp;шаговой доступности 2&nbsp;садика, 2&nbsp;школы, поликлиника, молл.
+
+                    h4.small Юридический статус
+                    p Земля в&nbsp;собственности. Пакет разрешительной документации. Первая и&nbsp;вторая секции сданы, ведется строительство третьей-шестой секций дома. Срок полной сдачи дома&nbsp;&mdash; конец 2013&nbsp;года. Финансирование осуществляется совместно со&nbsp;Сбербанком.
+
+        ul.justifyed.object--info
+            li.one-third.bg-red
+                span 691
+                    i  квартира
+
+            li.one-third.bg-green
+                span 55 890 кв.м.
+                    i общая плщадь
+                    i строительства
+
+            li.one-third.bg-blue
+                span 2 070 кв.м.
+                    i площадь
+                    i паркинга
+
+        .justifyed
+            a(href="" style="background: url('../../../img/bg--pechera-2.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Продажа
+                            i  активов
+
+                        small Печера
+
+
+            a(href="" style="background: url('../../../img/bg--pechera-3.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Аренда
+                            i коммерческой
+                            i недвижимости
+                        small  Печера
+
+
+    footer.section.footer
+        include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/avenue-object.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

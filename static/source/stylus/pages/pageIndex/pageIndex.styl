@@ -1,0 +1,411 @@
+.index
+  &--promo
+    .section-center-content
+      padding-bottom 290px
+
+      @media md
+        height 30vh
+        padding-bottom 0
+        bottom 0
+
+      @media sm
+        height 41vh
+
+    &--content
+      width 100%
+      display block
+      text-align center
+
+      img
+        display inline-block
+        vertical-align top
+        width 218px
+        margin-right 95px
+
+        @media md
+          margin-bottom 0
+          width 110px
+          margin-right 40px
+
+        @media sm
+          width auto
+          display block
+          margin 0 auto
+          max-width 50%
+          max-height 40%
+          margin-bottom 10px
+          max-height 13vh
+
+      h1
+        width 540px
+        color $c_white
+        display inline-block
+        vertical-align top
+        text-align left
+
+        @media md
+          margin-bottom 0
+          width auto
+
+        @media sm
+          font-size 7vw
+          display block
+          text-align center
+          white-space normal
+          width 100%
+          line-height normal
+
+          @media land
+            font-size 7vh
+
+        i
+          display block
+          font-style normal
+
+          @media sm
+            @media land
+              display inline
+
+
+  &--objects
+    ul
+      display flex
+      align-items stretch
+
+      @media md
+        display block !important
+
+      li
+        display inline-block
+        position relative
+        vertical-align top
+
+        @media md
+          height calc(33.3vh - 25px)
+          display block
+          width 100% !important
+
+        &:last-child
+          @media md
+            height calc(33.3vh + 70px)
+
+          a
+            padding-top 70px
+
+        a
+          display block
+          position absolute
+          left 0
+          top 0
+          right 0
+          bottom 0
+          width 100%
+
+          span
+            background $c_white_tr
+            padding 88px 65px 0
+            min-height 308px
+            font-size 36px
+            line-height normal
+            text-transform uppercase
+            font-family $f_Exo2_m
+
+            @media md
+              position relative
+              font-size 30px
+              width 565px
+              display flex
+              margin 0 auto
+              padding 0
+              min-height 12vh
+              align-items center
+
+            @media sm
+              font-size 22px
+              text-align center
+              justify-content center
+              padding 0 15px
+              width auto
+
+            &:before,
+            &:after
+              @media md
+                position absolute
+                width 500px
+                top 0
+                bottom 0
+                background $c_white_tr
+                content ""
+
+            &:before
+              @media md
+                left -500px
+
+            &:after
+              @media md
+                right -500px
+
+  &--activity
+    .justifyed
+      align-items stretch
+      height 100vh
+      padding-top 0
+
+      @media md
+        display block !important
+
+    &--left
+      @media md
+        display flex
+        width 100% !important
+        height calc(50vh - 35px)
+
+      @media sm
+        height auto
+        display block
+
+      &--el
+        position relative
+        display flex
+        align-items stretch
+        vertical-align top
+
+        @media md
+          height 100% !important
+          width 50%
+          display inline-flex
+
+        @media sm
+          display block
+          width 100%
+
+        &:first-child
+          height calc(50vh - 35px)
+
+          @media sm
+            height calc(33vh - 25px) !important
+
+        &:last-child
+          height calc(50vh + 105px)
+
+          a
+            span
+              padding-bottom 180px
+
+              @media md
+                padding-bottom 0
+
+          @media sm
+            height calc(33vh - 25px) !important
+
+        a
+          display block
+          width 100%
+          position relative
+
+          @media sm
+            position absolute
+            left 0
+            right 0
+            bottom 0
+
+          span
+            display block
+            padding 42px 65px 0
+            min-height 166px
+            font-size 36px
+            line-height normal
+            text-transform uppercase
+            font-family $f_Exo2_m
+
+            @media md
+              font-size 30px
+              padding 32px 65px 0
+
+            @media sm
+              font-size 22px
+              padding 0
+              min-height 78px
+              display flex
+              align-items center
+              justify-content center
+
+    &--right
+      position relative
+
+      @media md
+        display flex
+        width 100% !important
+        height calc(50vh + 35px)
+
+      @media sm
+        height calc(34vh + 151px)
+
+      &:after
+        position absolute
+        content ""
+        width 155px
+        height 111px
+        background url(../img/icon--play.svg) no-repeat 50% 50%
+        left 50%
+        top 50%
+        transform  translate(-50%,-50%)
+        margin-top -35px
+
+        @media sm
+          width 78px
+          height 65px
+          margin-top -100px
+
+      span
+        display block
+        padding 0 65px 100px
+        font-size 30px
+        line-height normal
+        text-transform uppercase
+        font-family $f_Exo2_l
+        position absolute
+        left 0
+        right 0
+        bottom 0
+        color $c_white
+
+        @media md
+          padding-bottom 105px
+          font-size 21px
+
+        @media sm
+          padding 0 15px 180px
+          font-size 12px
+
+        strong
+          font-family $f_Exo2_m
+          display block
+          font-size 72px
+
+          @media md
+            font-size 50px
+
+          @media sm
+            font-size 29px
+
+  &--contacts
+    .justifyed
+      align-items stretch
+
+      @media md
+        display block !important
+
+    &--left
+      position relative
+
+      @media md
+        display block
+        height calc(50vh - 35px)
+        width  100% !important
+
+    &--right
+      position relative
+
+      @media md
+        display block
+        height calc(50vh + 35px)
+        width  100% !important
+
+      .section-bottom-content
+        @media md
+          min-height 250px !important
+
+        @media sm
+          min-height calc(15vh + 70px) !important
+          padding-bottom 70px
+
+        span
+          @media md
+            padding-bottom 70px
+
+    .bg-gray-tr
+      span
+        color $c_white
+
+    .section-bottom-content
+      display flex
+      align-items center
+      justify-content flex-start
+      min-height 310px
+      padding 0 65px 70px
+
+      @media md
+        min-height 180px
+        padding 0 65px
+
+      @media sm
+        padding 0 15px
+        min-height 15vh
+
+      span
+        font-size 36px
+        line-height normal
+        text-transform uppercase
+        font-family $f_Exo2_m
+
+        @media sm
+          font-size 35px
+
+        strong
+          font-family $f_Exo2_m
+          display inline-block
+          font-size 72px
+
+          @media sm
+            font-size 35px
+
+  &--news
+    .news-list
+      display flex
+      align-items stretch
+      height 100vh
+
+      @media md
+        display block !important
+
+      &--el
+        height 100vh
+        min-height 100px
+
+        &:first-child
+          @media md
+            height calc(33vh - 25px)
+
+        @media md
+          height calc(33.3vh - 16px)
+          min-height 50px
+          width 100% !important
+
+        @media sm
+          display flex
+          align-items center
+          justify-content center
+
+        &-content
+          @media sm
+            padding 0 15px
+
+        &-img
+          height 345px
+
+          @media md
+            height 100%
+
+        &-time
+          margin-bottom 20px
+
+          @media sm
+            margin-bottom 5px
+
+        &-title
+          margin-bottom 20px
+
+          @media sm
+            margin-bottom 5px
+

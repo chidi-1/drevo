@@ -1,0 +1,119 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .object--top(style="background: url('../../../img/bg--avenue-top.jpg') no-repeat 50% 50%")
+            .width-wrap
+                ul.breadcrumbs
+                    li
+                        a(href="") Древо
+                    li
+                        a(href="") Объекты
+                    li
+                        span 3 Авеню
+
+                h1 3 Авеню
+
+        ul.object--social.mb-70
+            li.one-fourth.bg-red
+                a(href="")
+                    img(src="../../../img/icon--globus-white.svg" alt /)
+                    br
+                    span 3avenu.ru
+            li.one-fourth.bg-blue-d
+                a(href="")
+                    img(src="../../../img/icon--fb-white.svg" alt /)
+                    span @3avenu.ru
+            li.one-fourth.bg-blue-l
+                a(href="")
+                    img(src="../../../img/icon--vk-white.png" alt /)
+                    span @3avenu.ru
+            li.one-fourth.bg-beige
+                a(href="")
+                    img(src="../../../img/icon--in-white.svg" alt /)
+                    span @3avenu.ru
+
+        .width-wrap.justifyed.mb-70
+            .one-half
+                img(src="../../../img/logo--avenue.jpg" alt /)
+
+            .one-half
+                h4.small Концепция
+                p Закрытый коттеджный поселок с&nbsp;городскими коммуникациями. Таунхаусы и&nbsp;коттеджи с&nbsp;приусадебными участками. Строительный материал&nbsp;&mdash; кирпич.
+
+                h4.small Расположение
+                p Поселок находится в&nbsp;центральной части города, недалеко от&nbsp;Загородного парка. В&nbsp;450 метрах проходит магистральная улица Ново-Садовая.&nbsp;500 метров до&nbsp;р. Волга.
+
+        .object-slider.fullpage--inner-slider.mb-70
+            div(style="background: url('../../../img/img--slider-avenue-1.jpg') no-repeat 50% 50%" alt /)
+            div(style="background: url('../../../img/img--slider-avenue-2.jpg') no-repeat 50% 50%" alt /)
+
+        .width-wrap
+            .justifyed.mb-70
+                .one-half
+                    h4.small Основные параметры
+                    p Общая площадь участка&nbsp;&mdash; 1,06&nbsp;га, общая жилая площадь 8&nbsp;000&nbsp;кв.&nbsp;м. Встроенный паркинг на&nbsp;1&nbsp;машину, гостевой открытый паркинг на&nbsp;10&nbsp;машин.
+
+                    h4.small Домография
+                    p 27&nbsp;таунхаусов, блокированных в&nbsp;4&nbsp;строения и&nbsp;1&nbsp;коттедж.&nbsp;4&nbsp;уровня, гараж на&nbsp;1&nbsp;машину, площадь дома&nbsp;&mdash; 330&nbsp;кв.&nbsp;м.
+
+                .one-half
+                    img(src="../../../img/img--avenue-1.jpg" alt /)
+
+            .justifyed
+                .one-half
+                    img(src="../../../img/img--avenue-2.jpg" alt /)
+                    img(src="../../../img/img--avenue-3.jpg" alt /)
+
+                .one-half
+                    h4.small Сервис и&nbsp;инфраструктура
+                    p Внутри поселка находятся детские площадки, а&nbsp;также зеленая зона с&nbsp;беседками. Рядом с&nbsp;поселком располагаются: 4-звездочный отель &laquo;Ренессанс&raquo;, отель &laquo;Parkinn&raquo;, фитнес-центр, элитные рестораны и&nbsp;ТЦ&nbsp;&laquo;Мега Сити&raquo;.
+
+                    h4.small Юридический статус
+                    p Земля и&nbsp;здания находятся в&nbsp;собственности девелопера. Комплекс построен, сдан в&nbsp;эксплуатацию и&nbsp;частично уже заселен.&nbsp;85% домов продано (данные от&nbsp;03.14)
+
+        ul.justifyed.object--info
+            li.one-third.bg-red
+                span 333 кв.м.
+                    i площадь дома
+
+            li.one-third.bg-green
+                span 500 метров
+                    i до волги
+
+            li.one-third.bg-blue
+                span 27
+                    i таунхаусов
+
+        .justifyed
+            a(href="" style="background: url('../../../img/bg--avenue-2.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Продажа
+                            i  активов
+
+                        small 3 АВЕНЮ
+
+
+            a(href="" style="background: url('../../../img/bg--avenue-3.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Аренда
+                            i коммерческой
+                            i недвижимости
+                        small  3 АВЕНЮ
+
+
+    footer.section.footer
+        include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/avenue-object.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

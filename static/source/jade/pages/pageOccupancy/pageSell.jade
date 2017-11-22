@@ -1,0 +1,123 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") Аренда и&nbsp;продажа активов
+                li
+                    span Продажа активов
+
+            h1 Продажа активов
+
+            .sell-info
+                img(src="../../../img/logo--south-white.svg" alt /)
+
+                h5 Южный город
+                    strong продажа активов
+
+                ul.links
+                    li
+                        a(href="") Квартиры
+                    li
+                        a(href="") Офисно-торговая недвижимость
+                    li
+                        a(href="") Земельные участки
+                    li
+                        a(href="") Производственно-складская недвижимость
+                    li
+                        a(href="") Инвестиционные проекты
+                    li
+                        a(href="") Транспорт
+
+                a(href="").btn.btn-gray Подробнее
+
+            .justifyed.sell-objects
+                .one-half
+                    h2 3 Авеню
+                    h5 Продажа активов
+
+                    ul
+                        li
+                            a(href="") Квартиры
+                        li
+                            a(href="") Офисно-торговая недвижимость
+                        li
+                            a(href="") Земельные участки
+                        li
+                            a(href="") Производственно-складская недвижимость
+                        li
+                            a(href="") Инвестиционные проекты
+                        li
+                            a(href="") Транспорт
+
+                    a(href="").btn Подробнее
+
+
+                .one-half
+                    h2 Желябово
+                    h5 Продажа активов
+
+                    ul
+                        li
+                            a(href="") Квартиры
+                        li
+                            a(href="") Офисно-торговая недвижимость
+                        li
+                            a(href="") Инвестиционные проекты
+
+                    a(href="").btn Подробнее
+
+            .justifyed.sell-objects
+                .one-half
+                    h2 Гастелло.рф
+                    h5 Продажа активов
+
+                    ul
+                        li
+                            a(href="") Квартиры
+                        li
+                            a(href="") Офисно-торговая недвижимость
+                        li
+                            a(href="") Земельные участки
+                        li
+                            a(href="") Производственно-складская недвижимость
+                        li
+                            a(href="") Инвестиционные проекты
+                        li
+                            a(href="") Транспорт
+
+                    a(href="").btn Подробнее
+
+
+                .one-half
+                    h2 Печера.рф
+                    h5 Продажа активов
+
+                    ul
+                        li
+                            a(href="") Квартиры
+                        li
+                            a(href="") Офисно-торговая недвижимость
+                        li
+                            a(href="") Инвестиционные проекты
+
+                    a(href="").btn Подробнее
+
+    footer(data-anchor="").footer
+        include ../../partials/footer
+
+    <!-- Этот скрипт на сервере всегда удалять -->
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/sell-mobile.jpg",opacity: 0.5,top: -11,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

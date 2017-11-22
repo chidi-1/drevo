@@ -1,0 +1,25 @@
+doctype html
+html
+    block vars
+    head
+        meta(charset='utf-8')
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        title #{title}
+        meta(name="viewport" content="width=device-width" viewport="width=device-width")
+        link(rel='icon' href='../../../img/favicon.ico' type='image/x-icon')
+        link(rel='stylesheet', href="../../../css/style.css")
+
+        script(type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+        script(src="../../../js/app-common.js")
+        script(src="../../../js/app.js")
+        <!-- Этот скрипт на сервере всегда удалять -->
+        script(src="../../../js/jquery.pixlayout.0.9.6.js")
+        <!-- Этот скрипт на сервере всегда удалять -->
+
+    include mixins
+
+    body
+        .page-wrap
+            include header-slider
+            block content
+

@@ -1,0 +1,154 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+    main
+        .width-wrap
+            ul.breadcrumbs
+                li
+                    a(href="") Древо
+                li
+                    a(href="") Аренда и продажа активов
+                li
+                    a(href="") Аренда коммерческой недвижимости
+                li
+                    span Южный город
+
+            h1 Южный город
+                small  Аренда коммерческой недвижимости
+
+
+            .justifyed.object--numbers.mb-70
+                .one-half.bg-green
+                    span
+                        i
+                            strong 5
+                        i помещений
+                        i
+                            a(href="") свободно
+
+                .one-half.bg-gray-l
+                    span
+                        i
+                            strong 12
+                        i помещений
+                        i забронировано
+
+            .justifyed.mb-70.object--text
+                .one-half
+                    img(src="../../../img/logo--south.svg" alt /).logo
+
+                .one-half
+                    span Арендаторы могут выбрать удобный формат и&nbsp;место размещения:
+
+                    ul.text
+                        li Аренда отдельностоящих зданий на&nbsp;территории поселка.
+                        li Аренда офисных помещений в&nbsp;административно-офисном центре.
+                        li Аренда помещений.
+                        li Аренда земельных участков на&nbsp;территории сквера под детские развлекательные площадки, зоны отдыха
+
+            .object--params.mb-70
+                .object--params-select
+
+                    span.object--params-name
+                        strong Название объекта
+
+                    form(action="../../../js/ajax/load-object.html" method="post").selects
+                        .select-l
+                            select.js--select-styled.js--show-object
+                                option(value="3 Авеню. Сквер") 3 Авеню. Сквер
+                                option(value="3 Авеню. Второй блок") 3 Авеню.  Второй блок
+
+                        .select-s.justifyed
+                            select.js--select-styled.js--show-object
+                                option(value="3 Авеню. Сквер") Секция 1
+                                option(value="3 Авеню. Второй блок") Секция 2
+                            select.js--select-styled.js--show-object
+                                option(value="3 Авеню. Сквер") Этаж 1
+                                option(value="3 Авеню. Второй блок") Этаж 2
+
+                .load-container
+                    ul
+                        li
+                            span.object--params-name
+                                strong Адрес объекта:
+
+                            span.object--params-content г. Самара, ул. Название, 23&nbsp;
+                                =" "
+                                a(href="../pagePopup/pagePopup-map.html" class="fancybox.ajax").fancybox-map посмотреть на карте
+
+                        li
+                            span.object--params-name
+                                strong Общее количество помещений:
+
+                            span.object--params-content 330
+                                =" "
+                                a(href="../pagePopup/pagePopup-section.html" class="fancybox.ajax").fancy посмотреть на схеме
+
+                        li
+                            span.object--params-name
+                                strong Сданы в&nbsp;аренду:
+
+                            span.object--params-content 10
+                                =" "
+                                a(href="../pagePopup/pagePopup-section.html" class="fancybox.ajax").fancy посмотреть на схеме
+
+                        li
+                            span.object--params-name
+                                strong Цена аренды за&nbsp;кв.м.:
+
+                            span.object--params-content 810&nbsp;руб.
+
+                        li
+                            span.object--params-name
+                                strong Цена продажи за&nbsp;кв.м.:
+
+                            span.object--params-content 30&nbsp;000&nbsp;руб.
+
+        .object-slider.fullpage--inner-slider
+            div(style="background: url('../../../img/img--slider-avenue-1.jpg') no-repeat 50% 50%" alt /)
+            div(style="background: url('../../../img/img--slider-avenue-2.jpg') no-repeat 50% 50%" alt /)
+
+        ul.justifyed.object--info
+            li.one-third.bg-red
+                span Построено
+                    i 700 тысяч кв.м.
+
+            li.one-third.bg-green
+                span 400 тысяч
+                    i жителей
+
+            li.one-third.bg-blue
+                span 30 тысяч
+                    i квартир сдано
+
+        .justifyed
+            a(href="" style="background: url('../../../img/bg--avenue-2.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Продажа
+                            i  активов
+
+                        small Южный город
+
+
+            a(href="" style="background: url('../../../img/bg--avenue-3.jpg') no-repeat 50% 50%").one-half.objects-complex-s
+                .content
+                    h3
+                        strong Аренда
+                            i коммерческой
+                            i недвижимости
+                        small Южный город
+
+    footer.section.footer
+        include ../../partials/footer
+
+        <!-- Этот скрипт на сервере всегда удалять -->
+        //script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/avenue-oc-tablet.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

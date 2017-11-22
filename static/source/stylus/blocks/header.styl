@@ -1,0 +1,381 @@
+.header
+  position fixed
+  left 0
+  top 0
+  right 0
+  background $c_white
+  z-index 200
+  height 70px
+
+  &.header-slider
+    .width-wrap
+      @media md
+        width auto
+        padding 0 65px
+
+      @media sm
+        padding 0 15px
+
+  .width-wrap
+    width 1228px
+    align-items center
+    position relative
+
+    @media l
+      width 1065px
+
+    @media md
+      width 565px
+
+    @media sm
+      width auto
+      padding 0 15px
+      display flex !important
+
+  &--logo
+    display inline-block
+    vertical-align top
+    margin-right 5px
+    margin-top 12px
+    position relative
+    z-index 10
+
+    img
+      width 44px
+
+  &--nav
+    white-space nowrap
+    display inline-block
+    vertical-align top
+
+    @media md
+      transform translateX(-1000px)
+      transition transform 0.2s ease-in-out
+      position absolute
+      left 0
+      top 72px
+      background $c_red
+      padding 30px
+      opacity 0
+
+    &:before
+      @media md
+        position absolute
+        content ""
+        top 0
+        bottom 0
+        width 500px
+        left -500px
+        background $c_red
+        transition all 0.2s ease-in-out
+
+    &.open
+      @media md
+        transform translateX(-0)
+        opacity 1
+
+    li
+      white-space normal
+      display inline-block
+      vertical-align top
+      padding 0 18px 0 19px
+      height 70px
+      position relative
+
+      @media l
+        padding 0 10px
+
+      @media md
+        display block
+        padding 0
+        height auto
+        margin-bottom 20px
+
+      &.js--open-dropdown
+        position relative
+
+        &:after
+          @media md
+            position absolute
+            content ""
+            top 7px
+            right -15px
+            width 0
+            height 0
+            border-style solid
+            border-width 10px 10px 0 10px
+            border-color #ffffff transparent transparent transparent
+
+
+      &:last-child
+        padding-right 0
+
+        @media md
+          margin-bottom 0
+
+      &:first-child
+        padding-left 40px
+
+        @media md
+          padding-left 0
+
+      &:hover
+        & > a
+          border-top 3px solid $c_red
+
+        .dropdown
+          max-height 1000px
+
+          ul
+            transform translate(0, 0)
+
+            a
+              border none
+
+      a
+        display block
+        font-family $f_Exo2_s
+        font-size 14px
+        height 70px
+        line-height 74px
+        text-transform uppercase
+        box-sizing border-box
+        border-top 3px solid $c_white
+        transition all 0.2s ease-in-out
+
+        @media l
+          font-size 13px
+          line-height 67px
+
+        @media md
+          display inline-block
+          border none !important
+          color $c_white
+          height auto
+          line-height normal
+
+      .dropdown
+        position absolute
+        top 70px
+        left -5px
+        width auto
+        overflow hidden
+        max-height 0
+        transition all 0.2s ease-in-out
+
+        @media md
+          display none
+          max-height none
+          position relative
+          top 0
+          background transparent
+
+        ul
+          padding 20px 23px 20px 24px
+          background $c_white
+          transform translate(0, -500px)
+          transition all 0.2s ease-in-out
+
+          @media md
+            padding 20px 0 0 20px
+            transform translate(0, 0)
+            background transparent
+
+          li
+            display block
+            margin-bottom 20px
+            height auto
+            padding 0
+
+            &:last-child
+              margin-bottom 0
+
+            a
+              height auto
+              font-family $f_Exo2_l
+              color #a96260
+              font-size 16px
+              line-height normal
+              text-transform uppercase
+              white-space nowrap
+
+              @media md
+                color $c_white
+                font-size 13px
+
+  &--lk
+    font-size 14px
+    line-height 18px
+    text-transform uppercase
+    position relative
+    width 95px
+    margin-top -5px
+    margin-right -3px
+    z-index 5
+
+    @media md
+      font-size 0
+      width 0
+
+    &:before
+      position absolute
+      content ""
+      left -32px
+      top 50%
+      margin-top -8px
+      width 15px
+      height 15px
+      background url("../img/icon--key.svg")
+      background-size cover
+
+  &--hamburger
+    display none
+    transition all 0.2s ease-in-out
+
+    @media md
+      width 72px
+      height 72px
+      display inline-flex
+      align-items center
+      justify-content center
+      vertical-align top
+      position relative
+
+
+    svg
+      width 27px
+      height 19px
+
+      path
+        fill $c_black
+        transition all 0.2s ease-in-out
+
+    &:before
+      position absolute
+      content ""
+      top 0
+      bottom 0
+      width 500px
+      left -500px
+      background transparent
+      transition all 0.2s ease-in-out
+
+    &.open
+      @media md
+        background $c_red
+
+      svg
+        path
+          fill $c_white
+
+      &:before
+        @media md
+          background $c_red
+
+#fp-nav
+  position fixed
+  left 0
+  right 0
+  top 70px
+  transform translateY(calc(100vh - 140px))
+  background #c12934
+  margin 0 !important
+  transition all 1s
+
+  &.top
+    transform translateY(0)
+
+  ul
+    display block
+    margin 0 auto
+    width 1228px
+    padding-left 60px
+
+    @media md
+      width 565px
+      padding-left 0
+
+    li
+      white-space normal
+      display inline-block
+      vertical-align top
+      height 70px
+      position relative
+      margin 0 !important
+      width auto !important
+
+      &:nth-child(2)
+        .fp-tooltip
+          @media md
+            padding-left 0
+
+      a
+        display none
+
+        &.active + .fp-tooltip
+          border-bottom 3px solid $c_white
+
+      .fp-tooltip
+        padding 0 18px 0 19px
+        display block
+        font-family $f_Exo2_s
+        font-size 14px
+        height 70px
+        line-height 74px
+        text-transform uppercase
+        box-sizing border-box
+        border-bottom 3px solid transparent
+        transition all 0.2s ease-in-out
+        right auto !important
+        position relative !important
+        top 0 !important
+        opacity 1 !important
+        width auto !important
+
+.breadcrumbs
+  padding-bottom 16px
+  padding-top 23px
+
+  @media md
+    padding-top 31px
+
+  @media sm
+    padding-top 12px
+    padding-bottom 13px
+
+  li
+    display inline-block
+    vertical-align top
+    margin-right 25px
+    position relative
+
+    &:after
+      position absolute
+      content "—"
+      color $c_black
+      font-family $f_Exo2_l
+      top 50%
+      right -20px
+      font-size 16px
+      line-height 1px
+
+    &:last-child
+      margin-right 0
+
+      &:after
+        display none
+
+    a
+      display block
+      color $c_black
+      font-family $f_Exo2_l
+      font-size 16px
+      line-height 24px
+
+      @media md
+        font-size 14px
+
+      @media sm
+        font-size 12px
+        line-height 14px
+

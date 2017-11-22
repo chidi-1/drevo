@@ -1,0 +1,627 @@
+.objects-complex
+  background-size cover !important
+  padding-top 70px
+  min-height 485px
+  position relative
+
+  @media sm
+    padding-top 19px
+    min-height 357px
+
+  &:before
+    position absolute
+    content ""
+    left 0
+    top 0
+    bottom 0
+    width 50%
+    background linear-gradient(to right, rgba(0, 0, 0, 0.48) 0%, rgba(0, 0, 0, 0) 100%)
+
+  .width-wrap
+    position relative
+    z-index 10
+
+  h3
+    color $c_white
+
+    @media sm
+      margin-bottom 28px
+
+  a
+    display block
+    color $c_white
+    font-size 36px
+    text-decoration underline
+
+    @media sm
+      font-size 25px
+
+  &-s
+    background-size cover !important
+    padding-top 70px
+    min-height 485px
+
+    @media md
+      padding-top 40px
+
+    @media sm
+      display block
+      width 100% !important
+      height 245px
+      padding-top 21px
+
+    &:first-child
+      text-align right
+
+      @media sm
+        text-align left
+
+      .content
+        width auto
+        display block
+        text-align right
+        padding-right 45px
+
+        @media sm
+          width auto
+          padding 0 15px
+          text-align left
+
+    &:last-child
+      .content
+        padding-left 100px
+        width 540px
+
+        @media md
+          padding-left 45px
+          width 220px
+
+        @media sm
+          width auto
+          padding 0 15px
+
+    h3
+      color $c_white
+
+      @media md
+        font-size 30px
+        margin-bottom 45px
+
+      @media sm
+        margin-bottom 28px
+
+    a
+      display block
+      color $c_white
+      font-size 36px
+      text-decoration underline
+      margin-bottom 30px
+
+      @media md
+        font-size 30px
+        margin-bottom 50px
+
+      @media sm
+        font-size 25px
+        margin-bottom 20px
+
+.objects-links
+  align-items stretch
+
+  .objects-complex-s
+    @media md
+      min-height 200px
+      height auto
+
+    @media sm
+      min-height 250px
+      padding-left 0
+
+    h3
+      @media md
+        margin-bottom 30px
+
+      @media sm
+        margin-bottom 20px
+
+    a
+      @media md
+        margin-bottom 30px
+
+      &:last-child
+        @media md
+          margin-bottom 50px
+
+.objects-complex-s
+  @media md
+    height 200px
+    min-height 200px
+
+    @media sm
+      min-height 200px
+      padding-left 40px
+      padding-top 29px
+
+  .content
+    h3
+      @media md
+        font-size 24px
+
+      @media sm
+        font-size 24px
+
+.object--top
+  height 663px
+  background-size cover !important
+  display flex
+  align-items flex-end
+
+  @media md
+    height 500px
+
+  @media sm
+    height 405px
+
+  .width-wrap
+    padding-bottom 53px
+
+    li,
+    li:after,
+    a,
+    span,
+    h1
+      color $c_white
+
+.object--social
+  width 100%
+
+  & + .justifyed
+    @media md
+      display block !important
+
+  li
+    display inline-block
+    vertical-align top
+
+    @media md
+      width 50%
+
+    @media sm
+      width 100%
+
+    a
+      display flex
+      align-items center
+      align-content center
+      justify-items center
+      flex-flow row wrap
+      height 158px
+
+      img
+        display block
+        margin 0 auto 20px
+        max-width 33px
+        max-height 33px
+
+      span
+        display block
+        text-align center
+        width 100%
+        color $c_white
+        font-size 24px
+
+.object-slider
+  height 720px
+
+  @media sm
+    height 400px
+
+  .owl-item
+    div
+      height 720px
+      background-size cover !important
+
+      @media sm
+        height 400px
+
+.object--info
+  @media sm
+    display block !important
+
+  li
+    height 220px
+    display inline-flex
+    align-items center
+    align-content center
+    justify-items center
+    flex-flow row wrap
+
+    @media md
+      height 110px
+
+    @media sm
+      display flex
+      width 100%
+      height 160px
+
+    span
+      color $c_white
+      font-size 36px
+      line-height 40px
+      text-transform uppercase
+      text-align center
+      display block
+      width 100%
+
+      @media md
+        font-size 18px
+        line-height 30px
+
+      @media sm
+        font-size 25px
+        line-height 32px
+
+      i
+        display block
+        font-style normal
+
+.object--numbers.justifyed
+  @media md
+    display flex !important
+
+  @media sm
+    display block !important
+
+  .one-half
+    height 310px
+    display flex
+    align-items center
+    align-content center
+    justify-items center
+
+    @media md
+      width 265px
+      height 165px
+
+    @media sm
+      width auto
+      margin 0 -15px
+
+    span
+      display block
+      font-size 36px
+      line-height 48px
+      color $c_white
+      width 100%
+      text-align center
+
+      @media md
+        font-size 20px
+        line-height 26px
+
+      strong
+        font-size 72px
+        font-family $f_Exo2_m
+
+        @media md
+          font-size 38px
+
+      a
+        font inherit
+        color $c_white
+        text-decoration underline
+
+      i
+        display block
+        font-style normal
+
+.object--params
+  &-select
+    padding-bottom 30px
+
+    .object--params-name
+      padding-top 7px
+
+  &-name
+    display inline-block
+    vertical-align top
+    width 290px
+    padding-right 10px
+
+  &-content
+    display inline-block
+    vertical-align top
+    width 770px
+
+    @media md
+      display block
+      width 100%
+
+  .selects
+    display inline-block
+    vertical-align top
+    width 400px
+
+    @media md
+      margin-top 5px
+
+    @media sm
+      display block
+      width auto
+
+    .select-l
+      margin-bottom 20px
+
+      @media sm
+        margin-bottom 15px
+
+    .select-s
+      @media sm
+        display block !important
+
+      .jq-selectbox
+        width 190px
+
+        @media sm
+          display block !important
+          width 150px
+          margin-bottom 15px
+
+    .jq-selectbox
+      display inline-block
+      vertical-align top
+      width 400px
+      border none
+      box-shadow none
+
+      @media sm
+        display block
+        width 100%
+
+      .jq-selectbox__select
+        display block
+        outline none
+        border 1px solid #b7b7b7
+        height 42px
+        border-radius 0
+        background transparent
+        box-shadow none
+
+        .jq-selectbox__select-text
+          display flex
+          padding-left 10px
+          padding-right 45px
+          height 42px
+          align-items center
+          justify-content flex-start
+
+        .jq-selectbox__trigger-arrow
+          top 49%
+
+      .jq-selectbox__dropdown
+        ul
+          li
+            display block
+            text-align left
+            white-space normal
+            padding-left 10px
+            border none
+
+            @media sm
+              padding 12px 15px
+              margin-bottom 0
+
+            &.selected,
+            &.disabled
+              background transparent !important
+              color $c_black !important
+
+            &.disabled
+              display none
+
+  ul
+    li
+      display block
+      padding 6px 0 6px
+      border-bottom 1px solid #e0e0e0
+
+      @media sm
+        white-space normal
+        margin-bottom 20px
+        border none
+        padding 0
+
+      span
+        a
+          color $c_red
+          text-decoration underline
+
+  .tabs--content
+    display none
+
+    &.active
+      display block
+
+.object--sell
+
+  @media md
+    overflow-x scroll
+
+  .object--sell-form
+    display flex
+    align-items center
+    justify-content flex-start
+    padding-bottom 28px
+    padding-top 8px
+    width 1080px
+
+    span
+      margin-right 20px
+
+      @media sm
+        display block
+        margin-bottom 10px
+
+    .btn
+      font-size 18px
+      padding 15px 30px
+
+  .jq-selectbox
+    display inline-block
+    vertical-align top
+    width 400px
+    border none
+    box-shadow none
+    margin-right 20px
+
+    .jq-selectbox__select
+      display block
+      outline none
+      border 1px solid #b7b7b7
+      height 42px
+      border-radius 0
+      background transparent
+      box-shadow none
+
+      .jq-selectbox__select-text
+        display flex
+        padding-left 10px
+        padding-right 45px
+        height 42px
+        align-items center
+        justify-content flex-start
+
+      .jq-selectbox__trigger-arrow
+        top 49%
+
+    .jq-selectbox__dropdown
+      ul
+        li
+          display block
+          text-align left
+          white-space normal
+          padding-left 10px
+
+          &.selected,
+          &.disabled
+            background transparent !important
+            color $c_black !important
+
+          &.disabled
+            display none
+
+  table
+    width 100%
+
+    @media md
+      width 1000px
+
+    tr
+      th,
+      td
+        padding 12px 0
+        border-bottom 1px solid #cccccc
+        vertical-align top
+
+      .object--sell-cost
+        width 175px
+        text-align left
+
+        span
+          display block
+          font-size 18px
+          margin-bottom 10px
+
+        .btn
+          background transparent
+          color $c_red
+          font-size 16px
+          padding 10px 30px
+          border 1px solid $c_red
+
+      .object--sell-characters
+        width 240px
+        text-align left
+
+        span
+          display block
+
+      .object--sell-docs
+        width 160px
+        text-align center
+
+        a
+          display block
+          text-align center
+
+          img
+            display block
+            margin 10px auto 5px
+            width 20px
+
+          span
+            color $c_red
+            text-decoration underline
+
+      .object--sell-info
+        width 495px
+        text-align left
+
+        &-img
+          margin-left -20px
+
+          li
+            display inline-block
+            vertical-align top
+            margin-left 17px
+            margin-bottom 20px
+            width 110px
+
+            a
+              display flex
+              width 110px
+              height 80px
+              overflow hidden
+
+              img
+                display block
+                min-width 100%
+                min-height 100%
+
+  .load-container
+    padding-bottom 0
+
+.object--contacts
+  padding 60px 0
+
+  h4
+    text-align center
+    margin-bottom 0
+
+    @media md
+      font-size 24px
+
+    a
+      font inherit
+
+      &.phone
+        @media md
+          display block
+
+      &.mail
+        color $c_red
+
+.object--text
+  .one-half
+    img
+      max-width 100%
+
+      &.logo
+        min-width 80% !important
+        max-width 90% !important
+        margin 0 auto
+
+        @media md
+          min-width auto !important
+          max-width 66% !important
+          margin-left 0

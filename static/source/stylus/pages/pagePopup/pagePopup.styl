@@ -1,0 +1,104 @@
+.popup-map
+  width 800px
+
+  @media md
+    width 450px
+
+  @media sm
+    width 80vw
+
+  .map
+    height 70vh
+    background $c_white
+
+.popup-slider
+  width 800px
+  background $c_white
+
+  @media md
+    width 450px
+
+  @media sm
+    width 100vw
+
+  &--el
+    padding 65px 90px 90px
+
+    @media md
+      padding 35px 40px 40px
+
+    &-download
+      position absolute
+      width 35px
+      top 5px
+      right 0
+
+      @media md
+        right 35px
+
+      @media sm
+        right auto
+        left -20px
+
+      img
+        display block
+        width 100%
+        height auto !important
+
+    &--top
+      position relative
+      padding-bottom 30px
+
+      h4
+        text-align center
+        padding 0 60px
+
+        @media md
+          font-size 20px
+
+    img
+      height 60vh
+      width auto !important
+      display block
+      margin 0 auto
+
+      @media md
+        width 100% !important
+        height auto
+
+  .owl-nav
+    div
+      width 35px
+      height 35px
+
+    .owl-prev
+      left 30px
+
+      @media sm
+        left 0
+
+    .owl-next
+      right 30px
+
+      @media sm
+        right 0
+
+  .owl-dot
+    background $c_red !important
+
+  .owl-dots
+    @media md
+      bottom 10px
+
+.popup-form
+  background $c_white
+  display block
+  padding 65px 90px 90px
+
+  @media md
+    padding 35px 40px 40px
+
+  .main-form
+    @media sm
+      width auto
+

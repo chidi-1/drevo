@@ -1,0 +1,47 @@
+.use
+  h1
+    small
+      font-size 48px
+
+      @media md
+        font-size 30px
+
+  img
+    margin-bottom 70px
+
+  h3
+    margin-bottom 30px
+
+    a
+      color $c_red
+      font inherit
+      display inline
+      border-bottom 1px solid $c_red
+      font-family $f_Exo2_m
+
+  ul.text
+    li
+      margin-bottom 20px
+
+  .one-half
+    @media md
+      display block
+      width 100%
+
+    h5
+      @media sm
+        margin-bottom 15px
+
+      &:last-child
+        @media sm
+          margin-bottom 15px
+
+    p
+      @media sm
+        margin-bottom 15px
+
+  .justifyed
+    @media sm
+      display block !important
+
+

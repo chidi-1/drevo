@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width" viewport="width=device-width">
+    <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="../../../js/app-common.js"></script>
+    <script src="../../../js/app.js"></script><!-- ���� ������ �� ������� ������ ������� -->
+    <script src="../../../js/jquery.pixlayout.0.9.6.js"></script><!-- ���� ������ �� ������� ������ ������� -->
+  </head>
+  <!-- http://jade-lang.com/reference/mixins/-->
+  <body>
+    <div class="page-wrap">
+      <header class="header">
+        <div class="width-wrap justifyed">
+          <nav><a href="" class="header--logo"><img src="../../../img/logo--header.svg" alt /></a><a href="" class="header--hamburger js--open-menu">
+              <svg viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,10H20V8H0ZM0,6H20V4H0ZM0,2H20V0H0Z"></path>
+              </svg></a>
+            <ul class="header--nav">
+              <li class="js--open-dropdown"><a href="">О компании</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">Инвесторам</a></li>
+                    <li><a href="">Господдержка</a></li>
+                    <li><a href="">Вакансии</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="js--open-dropdown"><a href="">Объекты</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">3 авеню</a></li>
+                    <li><a href="">Печёра</a></li>
+                    <li><a href="">Гастелло</a></li>
+                    <li><a href="">Южный город</a></li>
+                    <li><a href=""> Желябово.рф</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="js--open-dropdown"><a href="">Управление недвижимостью</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">Эксплуатация объектов</a></li>
+                    <li><a href="">Аренда И&nbsp;ПРОДАЖА АКТИВОВ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Производство</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Подрядчикам и поставщикам</a></li>
+            </ul>
+          </nav><a href="" class="header--lk">Кабинет поставщика</a>
+        </div>
+      </header>
+      <main>
+        <div class="width-wrap">
+          <ul class="breadcrumbs">
+            <li><a href="">Древо</a></li>
+            <li><a href="">Аренда и продажа активов</a></li>
+            <li><a href="">Аренда коммерческой недвижимости</a></li>
+            <li><span>Печера</span></li>
+          </ul>
+          <h1>Печера<small> Аренда коммерческой недвижимости</small></h1>
+          <div class="justifyed object--numbers mb-70">
+            <div class="one-half bg-green"><span><i><strong>5</strong></i><i>помещений</i><i><a href="">свободно</a></i></span></div>
+            <div class="one-half bg-gray-l"><span><i><strong>12</strong></i><i>помещений</i><i>забронировано</i></span></div>
+          </div>
+          <div class="justifyed mb-70 object--text">
+            <div class="one-half"><img src="../../../img/logo--pechera.jpg" alt / class="logo"></div>
+            <div class="one-half"><span>Арендаторы могут выбрать удобный формат и&nbsp;место размещения:</span>
+              <ul class="text">
+                <li>Аренда отдельностоящих зданий на&nbsp;территории поселка.</li>
+                <li>Аренда офисных помещений в&nbsp;административно-офисном центре.</li>
+                <li>Аренда помещений.</li>
+                <li>Аренда земельных участков на&nbsp;территории сквера под детские развлекательные площадки, зоны отдыха</li>
+              </ul>
+            </div>
+          </div>
+          <div class="object--params mb-70">
+            <div class="object--params-select"><span class="object--params-name"><strong>Название объекта</strong></span>
+              <form action="../../../js/ajax/load-object.html" method="post" class="selects">
+                <div class="select-l">
+                  <select class="js--select-styled js--show-object">
+                    <option value="3 Авеню. Сквер">Печера. Сквер</option>
+                    <option value="3 Авеню. Второй блок">3 Авеню.  Второй блок</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+            <div class="load-container">
+              <ul>
+                <li><span class="object--params-name"><strong>Адрес объекта:</strong></span><span class="object--params-content">г. Самара, ул. Название, 23&nbsp; <a href="../pagePopup/pagePopup-map.html" class="fancybox.ajax fancybox-map">посмотреть на карте</a></span></li>
+                <li><span class="object--params-name"><strong>Общее количество помещений:</strong></span><span class="object--params-content">330 <a href="../pagePopup/pagePopup-section.html" class="fancybox.ajax fancy">посмотреть на схеме</a></span></li>
+                <li><span class="object--params-name"><strong>Сданы в&nbsp;аренду:</strong></span><span class="object--params-content">10 <a href="../pagePopup/pagePopup-section.html" class="fancybox.ajax fancy">посмотреть на схеме</a></span></li>
+                <li><span class="object--params-name"><strong>Цена аренды за&nbsp;кв.м.:</strong></span><span class="object--params-content">810&nbsp;руб.</span></li>
+                <li><span class="object--params-name"><strong>Цена продажи за&nbsp;кв.м.:</strong></span><span class="object--params-content">30&nbsp;000&nbsp;руб.</span></li>
+              </ul>
+            </div>
+            <div class="tabs--content">
+              <ul>
+                <li><span class="object--params-name"><strong>Адрес объекта:</strong></span><span class="object--params-content">Второй объект <a href="../pagePopup/pagePopup-map.html" class="fancybox.ajax fancybox-map">посмотреть на карте</a></span></li>
+                <li><span class="object--params-name"><strong>Общее количество помещений:</strong></span><span class="object--params-content">330 <a href="../pagePopup/pagePopup-section.html" class="fancybox.ajax fancy">посмотреть на схеме</a></span></li>
+                <li><span class="object--params-name"><strong>Сданы в&nbsp;аренду:</strong></span><span class="object--params-content">10 <a href="../pagePopup/pagePopup-section.html" class="fancybox.ajax fancy">посмотреть на схеме</a></span></li>
+                <li><span class="object--params-name"><strong>Цена аренды за&nbsp;кв.м.:</strong></span><span class="object--params-content">810&nbsp;руб.</span></li>
+                <li><span class="object--params-name"><strong>Цена продажи за&nbsp;кв.м.:</strong></span><span class="object--params-content">30&nbsp;000&nbsp;руб.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="object-slider fullpage--inner-slider">
+          <div style="background: url('../../../img/img--slider-pechera-1.jpg') no-repeat 50% 50%" alt /></div>
+          <div style="background: url('../../../img/img--slider-avenue-2.jpg') no-repeat 50% 50%" alt /></div>
+        </div>
+        <ul class="justifyed object--info">
+          <li class="one-third bg-red"><span>691<i> квартира</i></span></li>
+          <li class="one-third bg-green"><span>55 890 кв.м.<i>общая плщадь</i><i>строительства</i></span></li>
+          <li class="one-third bg-blue"><span>2 070 кв.м.<i>площадь</i><i>паркинга</i></span></li>
+        </ul>
+        <div class="justifyed"><a href="" style="background: url('../../../img/bg--pechera-2.jpg') no-repeat 50% 50%" class="one-half objects-complex-s">
+            <div class="content">
+              <h3><strong>Продажа<i> активов</i></strong><small>Печера</small></h3>
+            </div></a><a href="" style="background: url('../../../img/bg--pechera-3.jpg') no-repeat 50% 50%" class="one-half objects-complex-s">
+            <div class="content">
+              <h3><strong>Аренда<i>коммерческой</i><i>недвижимости</i></strong><small> Печера</small></h3>
+            </div></a></div>
+      </main>
+      <footer class="section footer">
+        <div class="width-wrap">
+          <div class="justifyed">
+            <div class="footer--left">
+              <ul class="footer-projects">
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">3 авеню</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Печёра</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Гастелло</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Южный город</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Желябово.рф</a></li>
+              </ul>
+            </div>
+            <div class="footer--right"><span class="strong">ООО «ДК «Древо»</span><span class="strong">г. Самара, ул. Неверова, 33</span><a href="tel:88007005522" class="strong">8-800-700-55-22</a></div>
+          </div>
+          <div class="justifyed">
+            <div class="footer--left mobile-position"><span>© 2017 ДК «ДРЕВО»</span><a href="" class="underline">Карта сайта</a></div>
+            <div class="footer--right"><span>Мы в соцсетях</span>
+              <ul class="social">
+                <li><a href=""><img src="../../../img/social--gm.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--fb.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--tw.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--in.jpg"></a></li>
+              </ul>
+              <p>Обращаем ваше внимание, что вся информация, размещенная на&nbsp;сайте, носит ознакомительный характер и&nbsp;не&nbsp;является публичной офертой.</p>
+            </div>
+          </div>
+          <div class="justifyed">
+            <div class="footer--left"><span class="gray">Разработка сайта —<a href="" target="_blank" class="underline">RuMaster</a></span></div>
+            <div class="footer--right"><a href="" class="fancybox.ajax fancy underline">Политика конфиденциальности</a></div>
+          </div>
+        </div><!-- Этот скрипт на сервере всегда удалять -->
+        <script type="text/javascript">$(function(){$.pixlayout({src: "../../../img/temp/avenue-oc.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});</script>
+      </footer>
+    </div>
+  </body>
+</html>

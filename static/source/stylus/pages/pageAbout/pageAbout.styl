@@ -1,0 +1,424 @@
+.about
+  &--promo
+    p
+      color $c_white
+      font-size 48px
+      line-height 74px
+      font-family $f_Exo2_l
+      text-transform uppercase
+
+      @media md
+        font-size 40px
+        line-height 62px
+
+      @media sm
+        font-size 24px
+        line-height 32px
+        padding-top 15vh
+
+  &-text
+    .justifyed
+      @media md
+        display block !important
+
+      .one-half
+        @media md
+          display block
+          margin-bottom 30px
+
+        @media sm
+          margin-bottom 5px
+
+        img
+          @media md
+            max-height 30vh
+
+            @media land
+              display none !important
+
+          @media sm
+            display none
+
+  &--strategy
+    .justifyed
+      @media md
+        display block !important
+
+      .one-half
+        @media md
+          display block
+          width 100%
+          margin-bottom 30px
+
+        &:first-child
+          @media md
+            display flex
+            align-items flex-start
+
+          img
+            @media md
+              width 48%
+              display inline-block
+              vertical-align top
+
+            @media sm
+              display none
+
+.vacancy
+  padding-bottom 100px
+
+  margin 0 -15px
+
+  &--el
+    display block
+    border 1px solid #d7d7d7
+    margin-bottom 22px
+
+  .acc_trigger
+    display block
+    background #f4f4f4
+    padding 35px 25px 35px 70px
+    cursor pointer
+
+    @media sm
+      padding 26px 25px 25px 62px
+
+    &.active
+      .icon
+        transform rotate(180deg)
+
+    .icon
+      display inline-block
+      vertical-align top
+      width 21px
+      height 20px
+      background url("../img/icon--arrow-bottom.svg")
+      background-size 100% 100%
+      margin-right 20px
+      margin-left -42px
+      margin-top 4px
+      transition all 0.2s ease-in-out
+      transform rotate(0deg)
+
+    span
+      display inline-block
+      vertical-align top
+      font-size 36px
+      font-family $f_Exo2_m
+
+      @media md
+        font-size 24px
+        line-height 30px
+
+      @media sm
+        font-size 18px
+        line-height 22px
+
+  .acc_container
+    .content
+      padding 40px 70px 45px
+
+      @media sm
+        padding 19px 15px 31px 15px
+
+      p
+        font-size 16px
+        line-height 24px
+        margin-bottom 24px
+        padding-left 45px
+
+        strong
+          display block
+          font-size 16px
+          line-height 24px
+
+          @media sm
+            font-size 14px
+            line-height 23px
+
+        @media sm
+          font-size 14px
+          line-height 23px
+
+      .btn
+        padding 20px 35px
+
+        @media sm
+          font-size 20px
+          padding 20px 0
+          margin 0 20px
+          display block
+
+.contacts-top
+  display block
+  background #f4f4f4
+  padding 51px 25px 43px 70px
+  border 1px solid #d7d7d7
+  margin-bottom 22px
+
+  @media sm
+    padding 41px 0 50px 62px
+    margin 0 -15px 9px
+    background transparent
+
+  span.title
+    display block
+    font-size 36px
+    font-family $f_Exo2_m
+    margin-bottom 41px
+
+    @media md
+      font-size 24px
+      line-height 30px
+
+    @media sm
+      font-size 18px
+      line-height 22px
+      margin-bottom 33px
+
+  span
+    display block
+    font-size 16px
+
+    @media sm
+      font-size 14px
+      line-height 22px
+
+    a
+      display inline
+      color $c_red
+      font-size 16px
+
+      @media sm
+        font-size 14px
+        padding-top 5px
+        display block
+
+.contacts--department
+  display block
+  border 1px solid #d7d7d7
+  margin-bottom 22px
+
+  @media sm
+    margin 0 -15px
+
+  .acc_trigger
+    display block
+    background #f4f4f4
+    padding 35px 25px 35px 70px
+    cursor pointer
+
+    @media sm
+      padding 38px 25px 35px 70px
+
+    &.active
+      .icon
+        transform rotate(180deg)
+
+    .icon
+      display inline-block
+      vertical-align top
+      width 21px
+      height 20px
+      background url("../img/icon--arrow-bottom.svg")
+      background-size 100% 100%
+      margin-right 20px
+      margin-left -42px
+      margin-top 4px
+      transition all 0.2s ease-in-out
+      transform rotate(0deg)
+
+    span
+      display inline-block
+      vertical-align top
+      font-size 36px
+      font-family $f_Exo2_m
+
+      @media md
+        font-size 24px
+
+      @media sm
+        font-size 18px
+        line-height 22px
+
+  .acc_container
+    background-size auto 100% !important
+
+    @media md
+      background none !important
+
+    @media sm
+      padding 19px 15px 31px 15px
+
+    .contacts-list
+      padding 34px 70px 45px
+
+      @media md
+        padding 34px 50px 45px
+
+      @media sm
+        padding  11px 0px 5px 46px
+
+      li
+        display block
+        padding-left 130px
+
+        @media md
+          padding-left 150px
+
+        @media sm
+          padding-left 80px
+          margin-bottom 5px
+
+        span
+          margin-left -130px
+          width 130px
+          padding-right 5px
+
+          @media md
+            margin-left -150px
+            width 150px
+
+          @media sm
+            margin-left -80px
+            width 75px
+            white-space normal
+            padding-right 0
+
+        p,
+        span,
+        a
+          display inline-block
+          vertical-align top
+          font-size 16px
+          line-height 22px
+
+          @media sm
+            font-size 14px
+            line-height 18px
+
+          strong
+            font-size 16px
+            line-height 22px
+
+            @media sm
+              font-size 14px
+              line-height 18px
+
+        a
+          color $c_red
+          text-decoration underline
+
+
+.vacancy-form
+  h5
+    margin-bottom 30px
+
+  .jq-selectbox__dropdown
+    ul
+      li.disabled
+        display none
+
+.date-form
+  background #ebebeb
+  padding 6px 15px
+  display flex
+  align-items center
+  align-content center
+  justify-content flex-start
+  width 1070px
+
+  i
+    font-style normal
+
+    @media sm
+      display block
+      margin-bottom 10px
+
+  span
+    display inline-block
+    vertical-align top
+    font-size 18px
+
+    @media sm
+      width 22px
+
+  .inp
+    display inline-block
+    vertical-align top
+    width 186px
+    height 42px
+    background $c_white url("../img/icon--calendar.svg") no-repeat 95% 50%
+    background-size 21px auto
+    border 1px solid #b7b7b7
+    box-shadow none
+    outline none
+    padding-left 20px
+    box-sizing border-box
+    margin 0 15px
+
+    @media md
+      margin 0 10px
+      width 165px
+
+  .btn
+    padding 17px 35px 14px
+    font-size 18px
+    margin-left 10px
+
+    @media sm
+      margin-left 35px
+
+.data-container
+  @media md
+    overflow-x scroll
+
+.report-list
+  width 1070px
+
+  li
+    display flex
+    align-items center
+    justify-content flex-start
+    border-bottom 1px solid #c8c8c8
+    padding 24px 0 22px
+
+    &:last-child
+      border-bottom none
+
+  &--links
+    display inline-block
+    vertical-align top
+    width 200px
+    padding-left 15px
+
+    a
+      display inline-block
+      vertical-align top
+      margin-right 27px
+
+      img
+        display block
+        width 25px
+
+  &--time
+    display inline-block
+    vertical-align top
+    width 155px
+    color #8a8a8a
+    font-size 18px
+
+  &--name
+    display inline-block
+    vertical-align top
+    width 700px
+
+.partners
+  .one-half
+    @media md
+      display block
+      width 100%
+      margin-bottom 30px
+
+
+

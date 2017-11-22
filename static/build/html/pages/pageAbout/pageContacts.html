@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width" viewport="width=device-width">
+    <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="../../../js/app-common.js"></script>
+    <script src="../../../js/app.js"></script><!-- ���� ������ �� ������� ������ ������� -->
+    <script src="../../../js/jquery.pixlayout.0.9.6.js"></script><!-- ���� ������ �� ������� ������ ������� -->
+  </head>
+  <!-- http://jade-lang.com/reference/mixins/-->
+  <body>
+    <div class="page-wrap">
+      <header class="header">
+        <div class="width-wrap justifyed">
+          <nav><a href="" class="header--logo"><img src="../../../img/logo--header.svg" alt /></a><a href="" class="header--hamburger js--open-menu">
+              <svg viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,10H20V8H0ZM0,6H20V4H0ZM0,2H20V0H0Z"></path>
+              </svg></a>
+            <ul class="header--nav">
+              <li class="js--open-dropdown"><a href="">О компании</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">Инвесторам</a></li>
+                    <li><a href="">Господдержка</a></li>
+                    <li><a href="">Вакансии</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="js--open-dropdown"><a href="">Объекты</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">3 авеню</a></li>
+                    <li><a href="">Печёра</a></li>
+                    <li><a href="">Гастелло</a></li>
+                    <li><a href="">Южный город</a></li>
+                    <li><a href=""> Желябово.рф</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="js--open-dropdown"><a href="">Управление недвижимостью</a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="">Эксплуатация объектов</a></li>
+                    <li><a href="">Аренда И&nbsp;ПРОДАЖА АКТИВОВ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Производство</a></li>
+              <li><a href="">Новости</a></li>
+              <li><a href="">Подрядчикам и поставщикам</a></li>
+            </ul>
+          </nav><a href="" class="header--lk">Кабинет поставщика</a>
+        </div>
+      </header>
+      <main>
+        <div class="width-wrap">
+          <ul class="breadcrumbs">
+            <li><a href="">Древо</a></li>
+            <li><a href="">О компании</a></li>
+            <li><span>Контакты</span></li>
+          </ul>
+          <h1>Контакты</h1>
+          <div class="contacts-top"><span class="title">ООО ДК «Древо»</span><span>443036, г. Самара, ул. Неверова, 33</span><span>Единая горячая линия:<a href="tel:88007005522">8-800-700-55-22</a></span></div>
+          <div class="contacts accordeon">
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Отдел продаж</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Домостроительный комбинат «Древо»</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Эксплуатация объектов</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Для подрядчиков</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Арендаторам</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Отдел кадров</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="contacts--department">
+              <div class="acc_trigger">
+                <div class="icon"></div><span>Приемная/PR</span>
+              </div>
+              <div style="background: url('../../../img/img--contacts.jpg') no-repeat 100% 0" class="acc_container">
+                <ul class="contacts-list">
+                  <li><span><strong>Адрес:</strong></span>
+                    <p>г. Самара, ул. Печерская, 20а</p>
+                  </li>
+                  <li><span><strong>Телефон:</strong></span><a href="tel:88462640064">8 (846) 264-00-64</a></li>
+                  <li><span><strong>Режим работы:</strong></span>
+                    <p>пн-пт 9:00-18:00</p>
+                  </li>
+                  <li><span><strong>E-mail:</strong></span><a href="mailto:sale@dkdrevo.ru">sale@dkdrevo.ru</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer data-anchor="" class="section footer">
+        <div class="width-wrap">
+          <div class="justifyed">
+            <div class="footer--left">
+              <ul class="footer-projects">
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">3 авеню</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Печёра</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Гастелло</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Южный город</a></li>
+                <li class="footer-projects--el"><a href=""><img src="../../../img/icon--fb.png"></a><a href=""><img src="../../../img/icon--in.png"></a><a href=""><img src="../../../img/icon--vk.png"></a><a href="" class="footer-projects--el-name">Желябово.рф</a></li>
+              </ul>
+            </div>
+            <div class="footer--right"><span class="strong">ООО «ДК «Древо»</span><span class="strong">г. Самара, ул. Неверова, 33</span><a href="tel:88007005522" class="strong">8-800-700-55-22</a></div>
+          </div>
+          <div class="justifyed">
+            <div class="footer--left mobile-position"><span>© 2017 ДК «ДРЕВО»</span><a href="" class="underline">Карта сайта</a></div>
+            <div class="footer--right"><span>Мы в соцсетях</span>
+              <ul class="social">
+                <li><a href=""><img src="../../../img/social--gm.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--fb.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--tw.jpg"></a></li>
+                <li><a href=""><img src="../../../img/social--in.jpg"></a></li>
+              </ul>
+              <p>Обращаем ваше внимание, что вся информация, размещенная на&nbsp;сайте, носит ознакомительный характер и&nbsp;не&nbsp;является публичной офертой.</p>
+            </div>
+          </div>
+          <div class="justifyed">
+            <div class="footer--left"><span class="gray">Разработка сайта —<a href="" target="_blank" class="underline">RuMaster</a></span></div>
+            <div class="footer--right"><a href="" class="fancybox.ajax fancy underline">Политика конфиденциальности</a></div>
+          </div>
+        </div><!-- Этот скрипт на сервере всегда удалять -->
+        <script type="text/javascript">$(function(){$.pixlayout({src: "../../../img/temp/contacts-mobile.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});</script>
+      </footer>
+    </div>
+  </body>
+</html>
